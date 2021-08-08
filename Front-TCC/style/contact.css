@@ -1,0 +1,57 @@
+.img-contact {
+    -webkit-transform: scaleX(-1);
+
+}
+
+.img-contact {
+    position: absolute;
+    left: 856px;
+    top: 185px;
+
+}
+
+.titulo-formulario {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.formulario {
+    text-align: center;
+    margin-top: 2%;
+}
+/* formulario */
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.btn-enviar {
+    width: 55%;
+    padding: 15px 0;
+    background-color: #ffc720;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: #f7b900;
+    /* transform: scale(1.2); */
+}
