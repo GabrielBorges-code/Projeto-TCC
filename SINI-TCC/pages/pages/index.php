@@ -35,7 +35,7 @@
 
     <header>
         <div class="menu">
-            <a href=""><img class="img-icone" src="../icon/control-panel.png" alt="icone painel de controle"></a>
+            <a href="index.php"><img class="img-icone" src="../icon/control-panel.png" alt="icone painel de controle"></a>
 
             <nav>
                 <ul>
@@ -44,7 +44,8 @@
                         <!-- <a href="cadastro.php"><button type="button" class="btn btn-register">Registre-se</button></a> -->
                         <!-- <p><img src="../icon/user.png" alt=""></p> -->
 
-                        <a class="botao tp" title="menu dropdown" href="javascript://"><img src="../icon/user.png" alt=""></a>
+                        <!-- <a class="botao tp" title="menu dropdown" href="javascript://"><img src="../icon/user.png" alt=""></a> -->
+                        <a class="botao tp" href="javascript://"><img src="../icon/user.png" alt=""></a>
 
                         <ul class="dropDown">
                             <!-- <li><a href="../validacao/logout.php" target="_blank">Sair</a></li> -->
@@ -69,7 +70,7 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
             {
-                "symbols": [{
+                "symbols"; [{
                         "proName": "FOREXCOM:SPXUSD",
                         "title": "S&P 500"
                     },
@@ -90,11 +91,11 @@
                         "title": "ETH/USD"
                     }
                 ],
-                "showSymbolLogo": true,
-                "colorTheme": "light",
-                "isTransparent": false,
-                "displayMode": "adaptive",
-                "locale": "br"
+                "showSymbolLogo"; true,
+                "colorTheme"; "light",
+                "isTransparent"; false,
+                "displayMode"; "adaptive",
+                "locale"; "br"
             }
         </script>
     </div>

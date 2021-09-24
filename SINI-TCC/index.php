@@ -17,7 +17,7 @@
 
     <header>
         <div class="menu">
-            <a href=""><img class="img-icone" src="./pages/icon/control-panel.png" alt="icone painel de controle"></a>
+            <a href="index.php"><img class="img-icone" src="./pages/icon/control-panel.png" alt="icone painel de controle"></a>
 
             <nav>
                 <ul>
@@ -59,6 +59,9 @@
                 <a href="http://" target="_blank" rel="noopener noreferrer"><img class="icone" src="./pages/icon/github.png"
                         alt="Link para o repositorio do projeto"></a>
 
+            </div>
+            <div class="texto">
+                <p>Todas as informações apresentadas tem caráter informativo e são provenientes de fontes públicas como B3, CVM, TESOURO NACIONAL, etc. e de dados calculados a partir das informações coletadas. O StatusInvest não tem o objetivo de fazer sugestão de compra ou venda de ativos, sendo assim, não se responsabiliza pelas decisões e caminhos tomados a partir da análise das informações aqui apresentadas.</p>
             </div>
         </div>
 

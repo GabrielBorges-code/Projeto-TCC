@@ -1,7 +1,7 @@
-*{
+/* *{
 	margin:0;
 	padding:0;
-}
+} */
 /* .botao{
 	display: block;
 	width: 160px;
@@ -46,6 +46,8 @@
 	display: block;
 	width: 100%;
 	height: auto;
+	margin: 0;
+	padding: 0;
 }
 .dropDown li a{
 	display: block;
@@ -55,13 +57,16 @@
 	font-family: 'Arial';
     font-size: 12px;
 	text-decoration: none;
-    padding: 4% 0 4% 10%;
+    padding: 5% 10%;
     text-transform: uppercase;
+	text-align: center;
 }
+
 .dropDown li a:hover{
 	background: #000;
+	/* background: red; */
 	
-}
+} 
 
 .tooltip {
 	display:none;
