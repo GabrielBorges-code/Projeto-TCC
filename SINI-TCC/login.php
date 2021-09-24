@@ -52,7 +52,7 @@
             <label for="password-2">Digite sua senha</label>
             <input type="password" name="senha" id="password-2" class="input-padrao" required placeholder="********">
 
-            <a href="forgot-pass.php">Esqueci minha Senha</a>
+            <a href="esqueci_a_senha.php">Esqueci minha Senha</a>
 
             <button type="submit" class="btn-access">Entrar</button>
             <!-- <input type="submit" value="Login" class="enviar"> -->

@@ -47,22 +47,22 @@
             <h1 class="formulario titulo-formulario">Problemas e/ou dúvidas sobre o sistema?</h1>
             <p class="formulario subtitulo">Entre em contato!</p>
 
-            <form class="form-contact" action="">
+            <form class="form-contact" method="POST" action="./pages/validacao/mensagem_contato.php">
 
                 <label for="nomesobrenome">Nome e Sobrenome</label>
-                <input type="text" name="" id="nomesobrenome" class="input-padrao" required
+                <input type="text" name="nome" id="nomesobrenome" class="input-padrao" required
                     placeholder="Gabriel Borges de Moura">
 
                 <label for="email">E-mail</label>
-                <input type="email" name="" id="email" class="input-padrao" required placeholder="seuemail@gmail.com">
+                <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@gmail.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" name="" id="telefone" class="input-padrao" required placeholder="(61)98888-7777">
+                <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(61)98888-7777">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
 
-                <button type="button" class="btn-enviar">Enviar</button>
+                <button type="submit" class="btn-enviar">Enviar</button>
 
             </form>
 
