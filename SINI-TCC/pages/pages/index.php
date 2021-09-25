@@ -1,14 +1,14 @@
 <?php
-    require('../../config/database.php');
+require('../../config/database.php');
 
-    session_start();
-    if (!$_SESSION['logged_in']) {
-        header("Location: ../validacao/logout.php");
-        exit;
-    }
+session_start();
+if (!$_SESSION['logged_in']) {
+    header("Location: ../validacao/logout.php");
+    exit;
+}
 
-    // var_dump($_SESSION['logged_in']);
-    // echo "Você está logado"
+// var_dump($_SESSION['logged_in']);
+// echo "Você está logado"
 ?>
 
 <!DOCTYPE html>
@@ -66,11 +66,13 @@
     </header>
 
     <!-- TradingView Widget BEGIN -->
+    <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Tape de Cotações</span></a> por TradingView</div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
             {
-                "symbols"; [{
+                "symbols": [{
                         "proName": "FOREXCOM:SPXUSD",
                         "title": "S&P 500"
                     },
@@ -91,14 +93,15 @@
                         "title": "ETH/USD"
                     }
                 ],
-                "showSymbolLogo"; true,
-                "colorTheme"; "light",
-                "isTransparent"; false,
-                "displayMode"; "adaptive",
-                "locale"; "br"
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "br"
             }
         </script>
     </div>
+    <!-- TradingView Widget END -->
     <!-- TradingView Widget END -->
 
     <main>
