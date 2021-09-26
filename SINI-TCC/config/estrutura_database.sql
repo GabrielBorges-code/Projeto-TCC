@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS usuario (
 
 );
 
-CREATE TABLE mensagem_contato (
+CREATE TABLE IF NOT EXISTS mensagem_contato (
 	id int (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email varchar (100),
     nome varchar (100),
