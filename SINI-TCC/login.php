@@ -20,9 +20,10 @@ $pagina_padrao->cabecalho();
 
         <button type="submit" class="btn-access">Entrar</button>
         <!-- <input type="submit" value="Login" class="enviar"> -->
-
+        
     </form>
-
+    
+    <br>
     <br>
     <br>
     <br>

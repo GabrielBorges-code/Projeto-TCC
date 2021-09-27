@@ -5,8 +5,9 @@
 
 .img-contact {
     position: absolute;
-    left: 880px;
-    top: 185px;
+    left: 860px;
+    top: 290px;
+    width: 380px;
 
 }
 
@@ -54,4 +55,23 @@ form label, form legend {
 .btn-enviar:hover{
     background-color: #f7b900;
     /* transform: scale(1.2); */
+}
+
+@media screen and (max-width: 480px) {
+    
+    .img-contact {
+        display: none;
+    }
+
+    .titulo-formulario {
+        font-size: 22px;
+    }
+
+    .input-padrao {
+       width: 100%;
+    }
+
+  
+   
+
 }

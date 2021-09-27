@@ -21,3 +21,10 @@ div.sobre p {
     text-align: justify;
 
 }
+
+@media screen and (max-width: 480px) {
+    div.sobre {
+        padding: 18px;
+
+    }
+}
