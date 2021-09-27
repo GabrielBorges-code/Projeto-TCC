@@ -75,3 +75,33 @@ form label, form legend {
     background-color: #f7b900;
     /* transform: scale(1.2); */
 }
+
+@media screen and (max-width: 480px) {
+
+    .input-padrao {
+        margin-left: 5px;
+        width: 83%;
+    }
+
+    .btn-enviar {
+        margin-left: 5px;
+        width: 97%;
+    }
+    
+    form label {
+        margin-left: 5px;
+    }
+
+    form a {
+        margin-left: 5px;
+    }
+
+    .btn-access {
+        width: 24%;
+    }
+
+    #esqueci-senha {
+        margin-left: 75%;
+    }
+
+}

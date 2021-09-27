@@ -143,3 +143,62 @@ footer {
 .linkedin, .github {
     display: inline-block
 }
+
+@media screen and (max-width: 480px) {
+    
+    header {
+        /* width: 77%; */
+        width: 100%;
+    }
+    
+    .menu {
+        width: auto;
+        height: 180px;
+        text-align: center;
+    }
+
+    nav {
+        top: 90px;
+        right: 12px;
+    }
+    
+
+    /* nav a {
+        font-size: 16px;
+    } */
+
+    nav li {
+        display: inline;
+        margin: 0 0 0 8px;
+    }
+
+    main {
+        /* width: 77%; */
+        width: 100%;
+        /* margin: 0; */
+
+    }
+    
+    footer {
+        text-align: center;
+        font-size: 16px;
+        /* width: 77%; */
+        width: 100%;
+    }
+
+    .redes-sociais {
+        height: 320px;;
+    }
+
+    .linkedin, .github {
+        margin-top: 5%;
+    }
+
+    .texto p {
+        text-align: justify;
+        margin-top: 7%;
+        padding: 10px;
+    }
+
+    
+}

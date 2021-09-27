@@ -8,8 +8,11 @@ $pagina_padrao->cabecalho();
 <main>
     <div class="contatc">
 
-        <h1 class="formulario titulo-formulario">Problemas e/ou dúvidas sobre o sistema?</h1>
-        <p class="formulario subtitulo">Entre em contato!</p>
+        <div class="texto-contato">
+            <h1 class="formulario titulo-formulario">Problemas e/ou dúvidas sobre o sistema?</h1>
+            <p class="formulario subtitulo">Entre em contato!</p>
+            
+        </div>
 
         <form class="form-contact" method="POST" action="./pages/validacao/mensagem_contato.php">
 
