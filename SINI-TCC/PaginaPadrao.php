@@ -57,13 +57,13 @@ class PaginaPadrao {
             <footer>
                 <div class="redes-sociais">
                     <div class="linkedin">
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="icone" src="./pages/icon/linkedin.png"
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="icone" src="./pages/icon/linkedin.png"
                                 alt="Link para o linkedin"></a>
 
                     </div>
 
                     <div class="github">
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img class="icone" src="./pages/icon/github.png"
+                        <a href="https://github.com/GabrielBorges-code/Projeto-TCC" target="_blank" rel="noopener noreferrer"><img class="icone" src="./pages/icon/github.png"
                                 alt="Link para o repositorio do projeto"></a>
 
                     </div>
@@ -81,7 +81,6 @@ class PaginaPadrao {
             </footer>
 
 
-        <script src="scripts/dropdown.js"></script>
         </body>
 
         </html>

@@ -23,7 +23,7 @@ if ( !empty($_POST["telefone"])) {
 $senha = "";
 if ( !empty($_POST["senha"])) {
     $senha = $_POST["senha"];
-    $senha = base64_encode($senha);
+    $senha = md5($senha);
 }
 
 $sql_select= "SELECT email FROM USUARIO";
