@@ -4,7 +4,7 @@ require('../../config/database.php');
 
 $email = $_POST["email"];
 $senha = $_POST["senha"];
-$senha = base64_encode($senha);
+$senha = md5($senha);
 
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

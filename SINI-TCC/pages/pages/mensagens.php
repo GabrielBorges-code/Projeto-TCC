@@ -15,7 +15,7 @@ $pagina_padrao->cabecalho();
 ?>
 
 <main>
-    <p>Página de perfil</p>
+    <p>Página de mensagens</p>
 </main>
 
 <?php

@@ -11,3 +11,31 @@ nav {
     /* right: 8%; */
 }
 
+.tela-grande{
+    display: block;
+}
+
+.tela-pequena {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    
+    main {
+        width: 100%;
+    }
+    .tela-grande{
+        display: none;
+    }
+
+    .tela-pequena {
+        display: block;
+    }
+
+    .menu {
+        text-align: left;
+        height: 93px;
+        margin-left: 48px;
+    }
+    
+}

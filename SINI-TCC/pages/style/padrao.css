@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
+body, body p, .input-padrao {
     font-family: 'Roboto', sans-serif;
     /* background:  #f5f5f5; */
 }
@@ -98,6 +98,7 @@ main {
 }
 
 footer {
+    /* font-family: 'Roboto', sans-serif; */
     text-align: center;
     /* height: 400px; */  
 } 
@@ -153,7 +154,7 @@ footer {
     
     .menu {
         width: auto;
-        height: 180px;
+        height: 200px;
         text-align: center;
     }
 
@@ -162,14 +163,13 @@ footer {
         right: 12px;
     }
     
-
-    /* nav a {
-        font-size: 16px;
-    } */
-
     nav li {
         display: inline;
         margin: 0 0 0 8px;
+    }
+
+    .btn-login, .btn-register {
+        margin-top: 15px;
     }
 
     main {
@@ -199,6 +199,5 @@ footer {
         margin-top: 7%;
         padding: 10px;
     }
-
     
 }
