@@ -17,7 +17,7 @@ $pagina_padrao->cabecalho();
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
     <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Tape de Cotações</span></a> por TradingView</div>
+    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
         {
             "symbols": [{
@@ -53,7 +53,23 @@ $pagina_padrao->cabecalho();
 
 <main>
 
-    <p>Neiva developer Master especialista em metodologia Scrum</p>
+    <div class="botoes">
+        <a href="questionario_perfil_investidor.php"><button type="button" class="btn-perfil">Quetionario Perfil do Investidor</button></a>
+        <a href="#"><button type="button" class="btn-perfil">Simular Gerenciamento</button></a>
+        <a href="#"><button type="button" class="btn-perfil">Lançamento Diários</button></a>
+        <a href="#"><button type="button" class="btn-perfil">Gerar Relatório</button></a>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <p>Neiva developer Master especialista em Guia PMBoK</p>
+
+    <br>
+    <br>
+    <br>
 
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container tela-pequena">

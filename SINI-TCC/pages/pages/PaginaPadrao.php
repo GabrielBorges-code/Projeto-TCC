@@ -16,6 +16,7 @@ class PaginaPadrao {
 
             <link rel="stylesheet" href="./styles/index.css">
             <link rel="stylesheet" href="./styles/dropdown.css">
+            <link rel="stylesheet" href="./styles/questionario.css">
 
             <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
