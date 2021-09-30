@@ -1,6 +1,11 @@
 <?php
 
 class PaginaPadrao {
+
+    // function __construct($id, $nome, email){
+        
+    // }
+    
     function cabecalho(){
         echo'
         <!DOCTYPE html>

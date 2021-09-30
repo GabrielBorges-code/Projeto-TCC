@@ -33,7 +33,6 @@ $pagina_padrao->cabecalho();
 
 </main>
 
-
 <?php
 $pagina_padrao->rodape();
 ?>

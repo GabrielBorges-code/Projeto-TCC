@@ -42,23 +42,23 @@ $pagina_padrao->cabecalho();
 
 <?php
 
-require('./config/database.php');
+// require('./config/database.php');
 
-$pdo = Database::connect();
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// $pdo = Database::connect();
+// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$teste_mensagem = utf8_encode("ção paúlo");
+// $teste_mensagem = utf8_encode("ção paúlo");
 
 // $sql = "INSERT INTO mensagem_contato (nome, email, telefone, mensagem) VALUES ('nome', 'email', 'telefone', '$teste_mensagem')";
 
 // mysql_query("SET character_set_results = 'utf8'");
 
-$sql = "SELECT * FROM mensagem_contato";
-$query = $pdo->prepare($sql);
-$query->execute();
-$login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
+// $sql = "SELECT * FROM mensagem_contato";
+// $query = $pdo->prepare($sql);
+// $query->execute();
+// $login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
 
-var_dump($login_usuario);
+// var_dump($login_usuario);
 
-$pagina_padrao->rodape();
-?>
+// $pagina_padrao->rodape();
+// ?>

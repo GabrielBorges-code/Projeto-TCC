@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS sistema_investimento_tcc
 
 -- 
 
-CREATE DATABASE IF NOT sistema_investimento_tcc;
+CREATE DATABASE sistema_investimento_tcc;
 
 USE sistema_investimento_tcc;
 
@@ -23,4 +23,15 @@ CREATE TABLE IF NOT EXISTS mensagem_contato (
     telefone varchar (20),
     nome varchar (100),
     mensagem TEXT
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+-- fazer tabela para questionario
+
+CREATE TABLE IF NOT EXISTS questionario_perfil_investidor (
+    id int (11) NOT NULL PRIMARY KEY,
+    pontos varchar (20),
+    tipo_de_investidor varchar (50),
+
+    FOREIGN KEY (id) REFERENCES usuario(id)
+
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
