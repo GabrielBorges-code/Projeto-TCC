@@ -68,7 +68,7 @@ $pagina_padrao->cabecalho();
     <br>
     <br>
 
-    <p>Neiva developer Master especialista em Guia PMBoK</p>
+    <!-- <p>Neiva developer Master especialista em Guia PMBoK</p> -->
 
     <br>
     <br>

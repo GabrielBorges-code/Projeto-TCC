@@ -279,7 +279,6 @@ $query_insert->execute();
 
 Database::disconnect();
 
-
 // echo "Meu id: " . $id . "<br>";
 // echo "Meus pontos: " . $pontos . "<br>";
 
@@ -298,6 +297,5 @@ Database::disconnect();
 
 echo "<script>window.alert('Dados enviados para oservidor!')
             window.location.href = '../pages/index.php'</script> ";
-
 
 ?>
