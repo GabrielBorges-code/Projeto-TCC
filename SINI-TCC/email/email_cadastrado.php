@@ -13,13 +13,13 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'sistemaindicacaodeinvestimento@gmail.com';                     //SMTP username
-    $mail->Password   = 'não é essa a senha';                         //SMTP password
-    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
+    $mail->isSMTP();                                            
+    $mail->Host       = 'smtp.gmail.com';                       
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username   = 'sistemaindicacaodeinvestimento@gmail.com';                     
+    $mail->Password   = 'não é essa a senha';                         
+    
 
     //Recipients
     $mail->setFrom('sistemaindicacaodeinvestimento@gmail.com', 'Atendimento');
@@ -28,10 +28,9 @@ try {
 
 
     //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->isHTML(true);
     $mail->Subject = utf8_decode('Atendimento - Sistema  Indicação de Investimentos e Gerenciamento de Capital');
     $mail->Body    = 'Olá você está cadastrado no nosso <b>Sistema</b>.<br> Burguesia do e-mail automatico. <br>Testando caracter especial ção páulo';
-    // $mail->AltBody = 'Não tem html nesse texto\ntesta';
 
     $mail->send();
 
