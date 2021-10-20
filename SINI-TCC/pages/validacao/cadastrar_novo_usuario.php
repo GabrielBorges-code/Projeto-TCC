@@ -6,22 +6,22 @@ $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $nome = "";
-if ( !empty($_POST["nome"])) {
+if (!empty($_POST["nome"])) {
     $nome = $_POST["nome"];
 }
 
 $email = "";
-if ( !empty($_POST["email"])) {
+if (!empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
 $telefone = "";
-if ( !empty($_POST["telefone"])) {
+if (!empty($_POST["telefone"])) {
     $telefone = $_POST["telefone"];
 }
 
 $senha = "";
-if ( !empty($_POST["senha"])) {
+if (!empty($_POST["senha"])) {
     $senha = $_POST["senha"];
     $senha = md5($senha);
 }
@@ -47,8 +47,9 @@ $query_insert->execute();
 
 Database::disconnect();
 
-echo "<script>window.alert('Usuário cadastrado com sucesso!')
-        window.location.href = '../../login.php'</script>";
+header("Location: ../../email/email_cadastrado.php?email={$email}");
 
+// echo "<script>window.alert('Usuário cadastrado com sucesso!')
+//         window.location.href = '../../login.php'</script>";
 
 ?>

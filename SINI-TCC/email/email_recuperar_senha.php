@@ -43,7 +43,7 @@ if ($email_existe == 0) {
         $mail->Host       = 'smtp.gmail.com';                       
         $mail->SMTPAuth   = true;                                   
         $mail->Username   = 'sistemaindicacaodeinvestimento@gmail.com';                     
-        $mail->Password   = 'não é essa a senha';                         
+        $mail->Password   = 'Não é a senha desse email';                         
         
         //Recipients
         $mail->setFrom('sistemaindicacaodeinvestimento@gmail.com', 'Atendimento');
@@ -57,7 +57,6 @@ if ($email_existe == 0) {
         $mail->send();
     
         // echo 'E-mail enviado com sucesso!<br>';
-
         echo "<script>window.alert('E-mail enviado para recuperar a senha')
                             window.location.href = '../index.php'</script>";
 
