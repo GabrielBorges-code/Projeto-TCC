@@ -16,6 +16,8 @@ class PaginaPadrao {
             <link rel="stylesheet" href="./pages/style/contato.css">
             <link rel="stylesheet" href="./pages/style/login.css">
       
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="./lib/vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
 
             <title>SINI</title>
 
@@ -79,7 +81,7 @@ class PaginaPadrao {
 
             </footer>
 
-
+            <script src="./pages/scripts/mask.js"></script>
         </body>
 
         </html>

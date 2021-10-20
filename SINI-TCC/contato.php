@@ -27,7 +27,8 @@ $pagina_padrao->cabecalho();
             <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(61)98888-7777">
 
             <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+            <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" maxlength="500" required></textarea>
+            <span class="caracteres">500</span> Restantes <br><br>
 
             <button type="submit" class="btn-enviar">Enviar</button>
 
@@ -38,6 +39,16 @@ $pagina_padrao->cabecalho();
     </div>
 
 </main>
+<script>
+    $(document).on("input", "#mensagem", function () {
+    var limite = 500;
+    var caracteresDigitados = $(this).val().length;
+    var caracteresRestantes = limite - caracteresDigitados;
+
+    $(".caracteres").text(caracteresRestantes);
+});
+
+</script>
 
 <?php
 $pagina_padrao->rodape();
