@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '4d9b823565084c0b37bc8f6011678813df08ddf5',
+    'reference' => 'b46e7849ccfb77489d68de0874524c94965924b3',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,16 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '4d9b823565084c0b37bc8f6011678813df08ddf5',
+      'reference' => 'b46e7849ccfb77489d68de0874524c94965924b3',
+    ),
+    'igorescobar/jquery-mask-plugin' => 
+    array (
+      'pretty_version' => 'v1.14.1',
+      'version' => '1.14.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '678a7df1f0bb275ce53f365b91af99d86850978d',
     ),
     'phpmailer/phpmailer' => 
     array (

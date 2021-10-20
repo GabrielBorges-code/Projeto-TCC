@@ -2,6 +2,7 @@
 
 body, body p, .input-padrao {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     /* background:  #f5f5f5; */
 }
 
@@ -94,6 +95,7 @@ nav a:hover {
 main {
     width: 1100px;
     margin: 0 auto;
+    min-height: 1200px;
 }
 
 footer {
