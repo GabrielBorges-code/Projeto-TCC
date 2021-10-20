@@ -58,8 +58,8 @@ $pagina_padrao->cabecalho();
 
     <div class="botoes">
         <a href="questionario_perfil_investidor.php"><button type="button" class="btn-perfil">Quetionario Perfil do Investidor</button></a>
-        <a href="#"><button type="button" class="btn-perfil">Simular Gerenciamento</button></a>
-        <a href="#"><button type="button" class="btn-perfil">Lançamento Diários</button></a>
+        <a href="simular_lucro.php"><button type="button" class="btn-perfil">Simular Lucro</button></a>
+        <a href="lancamento_diario.php"><button type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button></a>
         <a href="#"><button type="button" class="btn-perfil">Gerar Relatório</button></a>
 
     </div>
@@ -121,12 +121,8 @@ $pagina_padrao->cabecalho();
         </script>
     </div>
     <!-- TradingView Widget END -->
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 </main>

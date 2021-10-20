@@ -1,5 +1,4 @@
 <?php
-header("Content-Type: text/html; charset=UTF-8",true);
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
 
@@ -41,24 +40,5 @@ $pagina_padrao->cabecalho();
 </main>
 
 <?php
-
-// require('./config/database.php');
-
-// $pdo = Database::connect();
-// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// $teste_mensagem = utf8_encode("ção paúlo");
-
-// $sql = "INSERT INTO mensagem_contato (nome, email, telefone, mensagem) VALUES ('nome', 'email', 'telefone', '$teste_mensagem')";
-
-// mysql_query("SET character_set_results = 'utf8'");
-
-// $sql = "SELECT * FROM mensagem_contato";
-// $query = $pdo->prepare($sql);
-// $query->execute();
-// $login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
-
-// var_dump($login_usuario);
-
-// $pagina_padrao->rodape();
-// ?>
+$pagina_padrao->rodape();
+?>
