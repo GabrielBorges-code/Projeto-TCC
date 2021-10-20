@@ -1,0 +1,54 @@
+main.perfil {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+div.info-perfil {
+    background: #ecf0f5;
+    width: 60%;
+    height: 700px;
+    margin-top: 50px;
+    border-radius: 2%;
+    box-shadow: 6px 7px 26px rgb(0 0 0 / 20%);
+}
+
+ul.perfil {
+    margin: 0 25px 0 25px;
+}
+
+
+li.perfil {
+    margin: 25px 0 25px 0;
+}
+
+li.perfil b {
+    font-weight: bold;
+}
+
+
+.alinha-direita {
+    display: inline-block;
+    float: right;
+}
+
+.img-perfil {
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 120px;
+    margin-top: 25px;
+}
+
+.btn-access {
+    width: 22%;
+    padding: 15px 0;
+    background-color: #ffc720;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;    
+}

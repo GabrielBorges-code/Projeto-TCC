@@ -24,11 +24,37 @@ $login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
 Database::disconnect();
 
 ?>
+<!-- <link rel="stylesheet" href="./styles/perfil.css"> -->
 
-<main>
-    <p>Página de perfil</p>
+<main class="perfil">    
+    <div class="info-perfil">
+        <img class="img-perfil" src="./image/user.png" >
+        
+        <ul class="perfil">
 
-    <?= var_dump($login_usuario); ?>
+            <hr>
+
+            <li class="perfil"><b>Nome</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['nome'];?> </div></li>
+            <hr>
+
+            <li class="perfil"><b>E-mail</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['email'];?> </div></li>
+            <hr>
+
+            <li class="perfil"><b>Telefone</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['telefone'];?> </div></li>
+            <hr>
+
+            <li class="perfil"><b>Tipo de Investidor</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['tipo_de_investidor'];?> </div></li>
+            <hr>
+
+            <br>
+
+            <li class="perfil"><a href="editar_perfil.php"><button type="button" class="btn-access">Editar Perfil</button></a></li>
+
+
+        </ul>
+
+        
+    </div>
 
 </main>
 

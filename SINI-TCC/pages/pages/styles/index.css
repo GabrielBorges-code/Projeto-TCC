@@ -9,10 +9,16 @@ nav {
 
 .tela-grande{
     display: block;
+    /* position: absolute;
+    top: 245px; */
+    /* left: 18%; */
 }
 
 .tela-pequena {
     display: none;
+    /* position: absolute;
+    top: 280px; */
+    /* left: 3%; */
 }
 
 .botoes{

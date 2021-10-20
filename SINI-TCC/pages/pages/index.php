@@ -55,7 +55,7 @@ $pagina_padrao->cabecalho();
 <!-- TradingView Widget END -->
 
 <main>
-
+        
     <div class="botoes">
         <a href="questionario_perfil_investidor.php"><button type="button" class="btn-perfil">Quetionario Perfil do Investidor</button></a>
         <a href="simular_lucro.php"><button type="button" class="btn-perfil">Simular Lucro</button></a>
@@ -63,16 +63,8 @@ $pagina_padrao->cabecalho();
         <a href="#"><button type="button" class="btn-perfil">Gerar Relatório</button></a>
 
     </div>
-
-    <br>
-    <br>
-    <br>
-
-    <!-- <p>Neiva developer Master especialista em Guia PMBoK</p> -->
-
-    <br>
-    <br>
-    <br>
+    
+    <br><br><br>
 
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container tela-pequena">
@@ -122,9 +114,6 @@ $pagina_padrao->cabecalho();
     </div>
     <!-- TradingView Widget END -->
     
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
 </main>
 
 <?php
