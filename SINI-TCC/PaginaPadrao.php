@@ -15,6 +15,7 @@ class PaginaPadrao {
             <link rel="stylesheet" href="./pages/style/sobre.css">
             <link rel="stylesheet" href="./pages/style/contato.css">
             <link rel="stylesheet" href="./pages/style/login.css">
+            <link rel="stylesheet" href="./pages/style/index.css">
       
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="./lib/vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
@@ -57,12 +58,7 @@ class PaginaPadrao {
         echo '
             <footer>
                 <div class="redes-sociais">
-                <!-- <div class="linkedin">
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="icone" src="../icon/linkedin.png" alt="Link para o linkedin"></a>
-
-                </div> -->
-
-                <div class="github linkedin">
+                    <div class="github linkedin">
                         <a href="https://github.com/GabrielBorges-code/Projeto-TCC" target="_blank" rel="noopener noreferrer"><img class="icone" src="./pages/icon/github.png"
                                 alt="Link para o repositorio do projeto"></a>
 
