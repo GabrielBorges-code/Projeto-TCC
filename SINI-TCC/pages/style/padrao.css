@@ -93,6 +93,7 @@ nav a:hover {
 }
 
 main {
+    
     width: 1100px;
     margin: 0 auto;
     min-height: 1200px;
@@ -125,23 +126,18 @@ footer {
 
 }
 
-.linkedin {
-    margin-right: 15px;
-    transition: 0.5s all;
-    margin-top: 2%;
-}
-
 .github {
+    margin-top: 2%;
     margin-left: 15px;
     transition: 0.5s all;
 }
 
-.linkedin:hover, .github:hover{
+.github:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.linkedin, .github {
+.github {
     display: inline-block
 }
 
@@ -190,7 +186,7 @@ footer {
         height: 320px;;
     }
 
-    .linkedin, .github {
+   .github {
         margin-top: 5%;
     }
 

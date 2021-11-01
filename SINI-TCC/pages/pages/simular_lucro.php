@@ -14,7 +14,6 @@ $pagina_padrao->cabecalho();
 
 ?>
 <main>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </main>
 

@@ -23,6 +23,11 @@ $login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
 
 Database::disconnect();
 
+$nome = $login_usuario[0]['nome'];
+$email = $login_usuario[0]['email'];
+$telefone = $login_usuario[0]['telefone'];
+$tipo_de_investidor = $login_usuario[0]['tipo_de_investidor'];
+
 ?>
 <!-- <link rel="stylesheet" href="./styles/perfil.css"> -->
 
@@ -33,26 +38,25 @@ Database::disconnect();
         <ul class="perfil">
 
             <hr>
-
-            <li class="perfil"><b>Nome</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['nome'];?> </div></li>
+            <form method="POST" action="../validacao/editar_dados_perfil.php<?=$id?>">
+            
+            </form>
+            <li class="perfil"><b>Nome</b> <div class="alinha-direita"> <?php echo "<input type='text' name='nome' value='$nome' id=''>";?> </div></li>
             <hr>
 
-            <li class="perfil"><b>E-mail</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['email'];?> </div></li>
+            <li class="perfil"><b>E-mail</b> <div class="alinha-direita"> <?php echo "<input type='email' name='email' value='$email' id=''>";?> </div></li>
             <hr>
 
-            <li class="perfil"><b>Telefone</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['telefone'];?> </div></li>
+            <li class="perfil"><b>Telefone</b> <div class="alinha-direita"> <?php echo "<input type='tel' name='telefone' value='$telefone' id=''>";?> </div></li>
             <hr>
 
-            <li class="perfil"><b>Tipo de Investidor</b> <div class="alinha-direita"> <?php echo $login_usuario[0]['tipo_de_investidor'];?> </div></li>
+            <li class="perfil"><b>Tipo de Investidor</b> <div class="alinha-direita"> <?php echo "<input type='text' name='nome' value='$tipo_de_investidor' id=''>";?> </div></li>
             <hr>
 
             <br>
-
-            <?php
-            echo "<li class='perfil'><a href='perfil_editar.php?id=$id'><button type='button' class='btn-access'>Editar Perfil</button></a></li>";
             
-            ?>
-
+            <li class='perfil'><a href='perfil_editar.php?id=<?=$id?>'><button type='button' class='btn-access'>Salvar</button></a></li>";
+            
 
         </ul>
 

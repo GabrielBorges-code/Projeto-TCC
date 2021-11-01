@@ -62,11 +62,6 @@ class PaginaPadrao {
         echo '
         <footer>
             <div class="redes-sociais">
-                <!-- <div class="linkedin">
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><img class="icone" src="../icon/linkedin.png" alt="Link para o linkedin"></a>
-
-                </div> -->
-
                 <div class="github linkedin">
                     <a href="https://github.com/GabrielBorges-code/Projeto-TCC" target="_blank" rel="noopener noreferrer"><img class="icone" src="../icon/github.png" alt="Link para o repositorio do projeto"></a>
 
