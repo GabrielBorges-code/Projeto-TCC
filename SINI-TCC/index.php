@@ -100,10 +100,7 @@ $pagina_padrao->cabecalho();
         <img src="./pages/img/agressivo.png" alt="Gráfico do perfil investidor conservador">
     </div>
 
-
 </main>
-
-
 
 <?php
 $pagina_padrao->rodape();
