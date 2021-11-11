@@ -1,14 +1,16 @@
 <?php
 require('../../config/database.php');
 
-$id = "";
+$id_usuario = "";
 if (!empty($_GET["id"])) {
-    $id = $_GET["id"];
+    $id_usuario = $_GET["id"];
 }
 
 $data = "";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
+    $data = date('d/m/Y', strtotime($data));
+
 }
 
 $resultado_dia = 0;
@@ -16,73 +18,60 @@ if (!empty($_POST["resultado-dia"])) {
     $resultado_dia = $_POST["resultado-dia"];
 }
 
-$saldo_inicial;
 $valor_saldo_virtual = 0;
 if (!empty($_POST["valor-saldo-virtual"])) {
     $valor_saldo_virtual = $_POST["valor-saldo-virtual"];
-    
-    $pdo = Database::connect();
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $sql_consulta = "SELECT * FROM lancamento_diario WHERE id_usuario = $id";
-    $query_consulta = $pdo->prepare($sql_consulta);
-    $query_consulta->execute();
-    $dados_usuario = $query_consulta->fetchAll(PDO::FETCH_ASSOC);
-    
-    Database::disconnect();
-
-    // var_dump($dados_usuario);
-
-    if (empty($dados_usuario)) {
-        $saldo_inicial = $valor_saldo_virtual;
-        $valor_saldo_virtual += $resultado_dia;
-
-        echo $saldo_inicial . "<br>";
-        echo $resultado_dia . "<br>";
-        echo $valor_saldo_virtual . "<br>";
-
-    } else {
-        var_dump($dados_usuario);
-        // $valor_saldo_virtual += $resultado_dia;
-        
-        $saldo_virtual_banco = $dados_usuario[0]["saldo_virtual"];
-
-        $valor_saldo_virtual = $resultado_dia + $saldo_virtual_banco;
-
-        echo $saldo_virtual_banco . "<br>";
-        echo $resultado_dia . "<br>";
-        echo $valor_saldo_virtual . "<br>";
-
-    }
 
 }
 
-// $saldo_inicial = 0;
-// if (!empty($_POST["valor-saldo-virtual"])) {
-//     $saldo_inicial = $_POST["valor-saldo-virtual"];
-
-// }
-
-// echo $id . "<br>";
-// echo $data . "<br>";
-// echo "Resultado do dia " . $resultado_dia . "<br>";
-// echo "Valor saldo virtual " . $valor_saldo_virtual . "<br>";
-// echo "Valor saldo inicial " . $saldo_inicial . "<br>";
-
-// $valor_saldo_virtual += $resultado_dia;
-
-// echo "total " . $valor_saldo_virtual; 
+// var_dump($id_usuario);
+// var_dump($data);
+// var_dump($resultado_dia);
+// var_dump($valor_saldo_virtual);
 
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql_insert = "INSERT INTO lancamento_diario (id_usuario, data_lancamento, resultado_dia, saldo_virtual, saldo_inicial) VALUES ('$id', '$data', '$resultado_dia', '$valor_saldo_virtual', '$saldo_inicial')";
-$query_insert = $pdo->prepare($sql_insert);
-$query_insert->execute();
+$sql = "SELECT * FROM `lancamento_diario` WHERE id_usuario = '$id_usuario'";
+$query = $pdo->prepare($sql);
+$query->execute();
+$dados_lancamento = $query->fetchAll(PDO::FETCH_ASSOC);
 
 Database::disconnect();
+
+if (!empty($dados_lancamento)) {
+
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $saldo_inicial_2 = $dados_lancamento[0]['saldo_inicial'];
+    $ultima_posicao_array = (count($dados_lancamento) - 1);
+
+    $ultimo_valor_inserido = $dados_lancamento[$ultima_posicao_array]['saldo_virtual'];
+
+    $valor_saldo_virtual_contabilizado = ($resultado_dia) + $ultimo_valor_inserido;
+
+    $sql_inserir = "INSERT INTO lancamento_diario (id_usuario, data_lancamento, resultado_dia, saldo_virtual, saldo_inicial) VALUES ('$id_usuario', '$data', '$resultado_dia', '$valor_saldo_virtual_contabilizado', '$saldo_inicial_2')";
+    $query_inserir = $pdo->prepare($sql_inserir);
+    $query_inserir->execute();
+
+    Database::disconnect();
+
+} else {
+    $pdo = Database::connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $valor_saldo_virtual_somado = $valor_saldo_virtual + $resultado_dia;
+
+    $sql_inserir = "INSERT INTO lancamento_diario (id_usuario, data_lancamento, resultado_dia, saldo_virtual, saldo_inicial) VALUES ('$id_usuario', '$data', '$resultado_dia', '$valor_saldo_virtual_somado', '$valor_saldo_virtual')";
+    $query_inserir = $pdo->prepare($sql_inserir);
+    $query_inserir->execute();
+
+    Database::disconnect();
+
+}
 
 // echo "<script>window.alert('Lançamento feito com suceso!')
 //         window.location.href = '../pages/lancamento_diario.php'</script>";
 
-// header("Location: /projeto-TCC/SINI-TCC/pages/pages/lancamento_diario.php");
+header("Location: /projeto-TCC/SINI-TCC/pages/pages/lancamento_diario.php");
