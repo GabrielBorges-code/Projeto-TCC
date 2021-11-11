@@ -58,13 +58,14 @@ $pagina_padrao->cabecalho();
 
         </form>
 
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+
         <table width="95%" >
             <tr>
                 <th>Data</th>
                 <th>Resultado do Dia</th>
                 <th>Saldo Virtual</th>
-                <th>Excluir Lançamento</th>
+                <th id="excluir-lancamento">Excluir Lançamento</th>
             </tr>
             
                 <?php 
