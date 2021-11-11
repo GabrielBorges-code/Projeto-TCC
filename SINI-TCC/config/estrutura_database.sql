@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS questionario_perfil_investidor (
 -- lancamento_diario
 
 CREATE TABLE IF NOT EXISTS lancamento_diario (
+    id int (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	id_usuario int (11) NOT NULL,
     data_lancamento varchar(10),
     resultado_dia int(25),
     saldo_virtual int(25),
     saldo_inicial int(25)
     
-    -- FOREIGN KEY (id) REFERENCES usuario(id)
 );
