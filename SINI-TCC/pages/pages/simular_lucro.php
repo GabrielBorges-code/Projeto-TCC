@@ -13,8 +13,12 @@ if (!$_SESSION['logged_in']) {
 $pagina_padrao->cabecalho();
 
 ?>
-<main>
 
+<main>
+    <div class="conteudo">
+        <h1>Simular Lucros</h1>
+
+    </div>
 </main>
 
 <?php

@@ -1,0 +1,13 @@
+div.conteudo {
+    margin-top: 2px;
+}
+
+div.conteudo h1 {
+    margin: 5px;
+    font-size: 27px;
+    margin-top: 50%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}

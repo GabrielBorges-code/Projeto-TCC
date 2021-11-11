@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS sistema_investimento_tcc
+DROP DATABASE IF EXISTS sistema_investimento_tcc;
 
 -- 
 
@@ -35,3 +35,15 @@ CREATE TABLE IF NOT EXISTS questionario_perfil_investidor (
     FOREIGN KEY (id) REFERENCES usuario(id)
 
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+-- lancamento_diario
+
+CREATE TABLE IF NOT EXISTS lancamento_diario (
+	id_usuario int (11) NOT NULL,
+    data_lancamento varchar(10),
+    resultado_dia int(25),
+    saldo_virtual int(25),
+    saldo_inicial int(25)
+    
+    -- FOREIGN KEY (id) REFERENCES usuario(id)
+);
