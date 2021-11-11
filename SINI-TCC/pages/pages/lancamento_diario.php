@@ -15,7 +15,7 @@ $id = $_SESSION["dados_usuario"]["id"];
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql = "SELECT * FROM `lancamento_diario` WHERE id_usuario = '$id'";
+$sql = "SELECT * FROM `lancamento_diario` WHERE id_usuario = '$id' ORDER BY `lancamento_diario`.`id` ASC, `lancamento_diario`.`id_usuario`";
 $query = $pdo->prepare($sql);
 $query->execute();
 $dados_lancamento = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -59,8 +59,6 @@ $pagina_padrao->cabecalho();
         </form>
 
         <br><br><br><br><br><br><br><br>
-
-
         <table width="95%" >
             <tr>
                 <th>Data</th>
@@ -76,7 +74,9 @@ $pagina_padrao->cabecalho();
                         echo "<td>" . $dados["data_lancamento"] . "</td>";
                         echo "<td> R$ " . $dados["resultado_dia"] . "</td>";
                         echo "<td> R$ " . $dados["saldo_virtual"] . "</td>";
+
                         echo "<td><a href='../validacao/excluir_lancamento.php?id=" . $dados["id"] . "'><img src='../icon/excluir.png' alt='imagem para fazer a exclusão do item'></a></td>";
+
                         echo "</tr>";
                     }
                 ?>
@@ -86,6 +86,8 @@ $pagina_padrao->cabecalho();
     </div>
 
 </main>
+
+<script src="./scripts/lancamento_diario.js"></script>
 
 <?php
 $pagina_padrao->rodape();
