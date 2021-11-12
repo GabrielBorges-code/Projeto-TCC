@@ -1,13 +1,63 @@
 div.conteudo {
-    margin-top: 2px;
+    /* height: 60%; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    /* text-align: center; */
 }
+
+/* div.conteudo input.input-padrao {
+    text-align: center;
+    color: red;
+    background: blue;
+} */
 
 div.conteudo h1 {
-    margin: 5px;
-    font-size: 27px;
-    margin-top: 50%;
-    color: white;
+    text-align: center;
     font-weight: bold;
-    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 25px;
 
 }
+
+label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.span-padrao {
+    background: #f7b900;
+    font-weight: bold;
+    color: white;
+    padding: 13px 40px;
+    /* width: 30px; */
+}
+
+#span-meses {
+    padding: 13px 25px;
+}
+
+#span-ao-ano {
+    padding: 13px 14px;
+
+}
+
+#btn-calcular {
+    display: block;
+    width: 35%;
+    margin: 0;
+    margin-left: 15%;
+}
+
+/* div.conteudo button#btn-calcular {
+    text-align: center;
+} */
+

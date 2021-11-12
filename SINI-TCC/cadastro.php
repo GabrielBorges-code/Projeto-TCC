@@ -5,7 +5,6 @@ $pagina_padrao = new PaginaPadrao();
 $pagina_padrao->cabecalho();
 ?>
 
-
 <main>
     <h1 class="login titulo-principal">Não tem cadastro em nossa plataforma?</h1>
     <p class="login">Faça o cadastro, e venha aprender conosco! 😉</p>
