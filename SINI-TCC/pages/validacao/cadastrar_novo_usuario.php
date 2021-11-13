@@ -49,7 +49,4 @@ Database::disconnect();
 
 header("Location: ../../email/email_cadastrado.php?email={$email}");
 
-echo "<script>window.alert('Usuário cadastrado com sucesso!')
-        window.location.href = '../../login.php'</script>";
-
 ?>

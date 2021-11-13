@@ -24,8 +24,10 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
+    $mail->SMTPSecure = 'tls';    // TLS REQUERIDO pelo GMail
+    $mail->Port = 587;          // A porta 587 deverá estar aberta em seu servidor
     $mail->Username   = 'sistemaindicacaodeinvestimento@gmail.com';
-    $mail->Password   = 'Não é a senha desse email';
+    $mail->Password   = 'Não é a senha';
 
     //Recipients
     $mail->setFrom('sistemaindicacaodeinvestimento@gmail.com', 'Atendimento');
@@ -34,15 +36,18 @@ try {
     //Content
     $mail->isHTML(true);
     $mail->Subject = utf8_decode('Boas vindas - Sistema Indicação de Investimentos e Gerenciamento de Capital');
-    $mail->Body    = 'Seja bem vindo ao Sistema Indicação de Investimentos e Gerenciamento de Capital. Agora você está cadastrado em nossa plataforma! 😉<br>';
+    $mail->Body    = utf8_decode('Seja bem vindo ao Sistema Indicação de Investimentos e Gerenciamento de Capital. Agora você está cadastrado em nossa plataforma! 😉<br>');
 
     $mail->send();
 
     echo "<script>window.alert('Usuário cadastrado com sucesso!')
          window.location.href = '../login.php'</script>";
+
 } catch (Exception $e) {
     // echo "Falha ao enviar o E-mail<br> {$mail->ErrorInfo}";
     echo "Falha ao enviar o E-mail<br>";
+
+    // var_dump($e);
 }
 
 ?>
