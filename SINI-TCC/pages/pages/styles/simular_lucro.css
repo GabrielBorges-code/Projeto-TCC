@@ -6,11 +6,10 @@ div.conteudo {
     /* text-align: center; */
 }
 
-/* div.conteudo input.input-padrao {
+div.conteudo input.input-padrao {
     text-align: center;
-    color: red;
-    background: blue;
-} */
+    
+}
 
 div.conteudo h1 {
     text-align: center;
