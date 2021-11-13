@@ -42,8 +42,10 @@ if ($email_existe == 0) {
         $mail->isSMTP();                                            
         $mail->Host       = 'smtp.gmail.com';                       
         $mail->SMTPAuth   = true;                                   
+        $mail->SMTPSecure = 'tls';    // TLS REQUERIDO pelo GMail
+        $mail->Port = 587;          // A porta 587 deverá estar aberta em seu servidor
         $mail->Username   = 'sistemaindicacaodeinvestimento@gmail.com';                     
-        $mail->Password   = 'Não é a senha desse email';                         
+        $mail->Password   = 'Não é a senha';                         
         
         //Recipients
         $mail->setFrom('sistemaindicacaodeinvestimento@gmail.com', 'Atendimento');
@@ -52,7 +54,7 @@ if ($email_existe == 0) {
         //Content
         $mail->isHTML(true);
         $mail->Subject = utf8_decode('Recuper Senha - Sistema  Indicação de Investimentos e Gerenciamento de Capital');
-        $mail->Body    = "Prezado usuário, tudo bem?<br>Você solicitou a recuperação de senha, click no link para cadastrar uma <a href='http://localhost/projeto-TCC/SINI-TCC/recuperar_senha.php?email={$email}' target='_blank' rel='noopener noreferrer'>nova senha</a>.<br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital";
+        $mail->Body    = utf8_decode("Prezado usuário, tudo bem?<br>Você solicitou a recuperação de senha, click no link para cadastrar uma <a href='http://localhost/projeto-TCC/SINI-TCC/recuperar_senha.php?email={$email}' target='_blank' rel='noopener noreferrer'>nova senha</a>.<br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital");
     
         $mail->send();
     
@@ -63,6 +65,9 @@ if ($email_existe == 0) {
     } catch (Exception $e) {
         // echo "Falha ao enviar o E-mail<br> {$mail->ErrorInfo}";
         echo "Falha ao enviar o E-mail<br>";
+
+        // var_dump($e);
+
     
     }
 }
