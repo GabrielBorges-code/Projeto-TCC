@@ -24,78 +24,75 @@ $pagina_padrao->cabecalho();
 
         <form method="POST" action="../validacao/questionario.php">
 
-            <!-- <p>Questionário definição do perfil do investidor:</p>         -->
-            <br>
-            
-            <p>1 - Qual valor inicial você tem para investir?</p>
+            <p>1 - Qual é a sua idade?</p>
             <br>
 
-            <input type="radio" id="renda-2k" name="renda" value="a">
-            <label for="renda-2k">Até R$ 2.000,00.</label><br>
-            <input type="radio" id="renda-entre-2k-10k" name="renda" value="b">
-            <label for="renda-entre-2k-10k">De R$ 2.000,00 a R$ 10.000,00.</label><br>
-            <input type="radio" id="renda-acima-10k" name="renda" value="c">
-            <label for="renda-acima-10k">R$ 10.000,00.</label><br>
+            <input type="radio" id="idade-ate-25" name="idade-usuario" value="a">
+            <label for="idade-ate-25">até 25 anos.</label><br>
+            <input type="radio" id="idade-entre-26-50" name="idade-usuario" value="b">
+            <label for="idade-entre-26-50">entre 26 e 50 anos.</label><br>
+            <input type="radio" id="idade-mais-51" name="idade-usuario" value="c">
+            <label for="idade-mais-51">51 anos ou mais.</label><br>
 
             <br><br>
 
-            <p>2 - Você investe seu dinheiro?</p>
+            <p>2 - Quantos dependentes você possui?</p>
             <br>
 
-            <input type="radio" id="investe-nunca" name="investe" value="a">
-            <label for="investe-nunca">Nunca investi.</label><br>
-            <input type="radio" id="investe-poupanca" name="investe" value="b">
-            <label for="investe-poupanca">Poupança.</label><br>
-            <input type="radio" id="investe-variado" name="investe" value="c">
-            <label for="investe-variado">Tesouro direto, CDI, Bolsa de Valores ou outra.</label>
+            <input type="radio" id="dependentes-nenhum-1" name="dependentes" value="a">
+            <label for="dependentes-nenhum-1">nenhum ou 1 dependente.</label><br>
+            <input type="radio" id="dependentes-2-3" name="dependentes" value="b">
+            <label for="dependentes-2-3">2 a 3 dependentes.</label><br>
+            <input type="radio" id="dependentes-mais-3" name="dependentes" value="c">
+            <label for="dependentes-mais-3">3 ou mais dependentes.</label>
 
             <br><br>
 
-            <p>3 -  Se você aplicasse seu dinheiro e estivesse perdendo 40% dele, qual seria sua reação?</p>
+            <p>3 - Quantos porcentos de sua renda mensal você estaria disposto a investir?</p>
             <br>
 
-            <input type="radio" id="reacao-perda-retiraria" name="reacao-perda" value="a">
-            <label for="reacao-perda-retiraria">Retiraria o dinheiro.</label><br>
-            <input type="radio" id="reacao-perda-deixaria" name="reacao-perda" value="b">
-            <label for="reacao-perda-deixaria">Deixaria o dinheiro até ficar perdendo menos e retirava.</label><br>
-            <input type="radio" id="reacao-perda-deixaria-positivo" name="reacao-perda" value="c">
-            <label for="reacao-perda-deixaria-positivo">Deixaria o dinheiro aplicado até fica positivo ou até que se perca totalmente.</label>
+            <input type="radio" id="porcento-renda-10" name="porcento-renda-investiria" value="a">
+            <label for="porcento-renda-10">até 10%.</label><br>
+            <input type="radio" id="porcento-renda-entre-11-35" name="porcento-renda-investiria" value="b">
+            <label for="porcento-renda-entre-11-35">entre 11% a 35%.</label><br>
+            <input type="radio" id="porcento-renda-mais-36" name="porcento-renda-investiria" value="c">
+            <label for="porcento-renda-mais-36">mais que  36%.</label>
 
             <br><br>
 
-            <p>4 - Seu dinheiro consegue suprir seus gastos?</p>
+            <p>4 - Você investe seu dinheiro?</p>
             <br>
 
-            <input type="radio" id="suprir-gasto-nao-sobra" name="suprir-gastos" value="a">
-            <label for="suprir-gasto-nao-sobra">Consigo, mas não sobra.</label><br>
-            <input type="radio" id="suprir-gastos-sobra-pouco" name="suprir-gastos" value="b">
-            <label for="suprir-gastos-sobra-pouco">Consigo pagar as dívidas e sobra um pouco.</label><br>
-            <input type="radio" id="suprir-gastos-sobra" name="suprir-gastos" value="c">
-            <label for="suprir-gastos-sobra">Consigo e sobra.</label><br>
+            <input type="radio" id="voce-investe-nunca-investi" name="voce-investe-seu-dinheiro" value="a">
+            <label for="voce-investe-nunca-investi">Nunca investi.</label><br>
+            <input type="radio" id="voce-investe-poupanca" name="voce-investe-seu-dinheiro" value="b">
+            <label for="voce-investe-poupanca">Poupança.</label><br>
+            <input type="radio" id="voce-investe-tesouro" name="voce-investe-seu-dinheiro" value="c">
+            <label for="voce-investe-tesouro">Tesouro direto, CDI, Bolsa de Valores ou outra.</label><br>
 
             <br><br>
 
-            <p>5 - Quantos porcentos sobra de sua renda mensal?</p>
+            <p>5 - Se você aplicasse seu dinheiro e estivesse perdendo 40% dele, qual seria sua reação?</p>
             <br>
 
-            <input type="radio" id="sobra-ate-10" name="porcentos-sobra" value="a">
-            <label for="sobra-ate-10">Até 10%.</label><br>
-            <input type="radio" id="sobra-ate-35" name="porcentos-sobra" value="b">
-            <label for="sobra-ate-35">Até 35%.</label><br>
-            <input type="radio" id="sobra-ate-50" name="porcentos-sobra" value="c">
-            <label for="sobra-ate-50">Até 50%.</label>
+            <input type="radio" id="perdendo-investimento-retiraria" name="perdendo-investimento" value="a">
+            <label for="perdendo-investimento-retiraria">Retiraria o dinheiro.</label><br>
+            <input type="radio" id="perdendo-investimento-deixaria-recuperar" name="perdendo-investimento" value="b">
+            <label for="perdendo-investimento-deixaria-recuperar">Deixaria o dinheiro até recuperar uma parte.</label><br>
+            <input type="radio" id="perdendo-investimento-arricar-tudo" name="perdendo-investimento" value="c">
+            <label for="perdendo-investimento-arricar-tudo">Deixaria o dinheiro aplicado até ficar positivo ou até que se perca totalmente.</label>
 
             <br><br>
 
-            <p>6 - Você controla suas dívidas?</p>
+            <p>6 - Por quanto tempo deseja manter seu investimento?</p>
             <br>
 
-            <input type="radio" id="controla-dividas" name="controla-dividas" value="a">
-            <label for="controla-dividas">Controlo.</label><br>
-            <input type="radio" id="controla-dividas-pouco" name="controla-dividas" value="b">
-            <label for="controla-dividas-pouco">Controlo um pouco.</label><br>
-            <input type="radio" id="nao-controla-dividas" name="controla-dividas" value="c">
-            <label for="nao-controla-dividas">Não controlo.</label><br>
+            <input type="radio" id="manter-investimento-menos-1" name="tempo-manter-investimento" value="a">
+            <label for="manter-investimento-menos-1">menos de 1 ano - curto prazo.</label><br>
+            <input type="radio" id="manter-investimento-entre-1-3" name="tempo-manter-investimento" value="b">
+            <label for="manter-investimento-entre-1-3">entre 1 e 3 anos - médio prazo.</label><br>
+            <input type="radio" id="manter-investimento-mais-3" name="tempo-manter-investimento" value="c">
+            <label for="manter-investimento-mais-3">3 anos para cima - longo prazo.</label><br>
 
             <br><br>
 
@@ -135,7 +132,7 @@ $pagina_padrao->cabecalho();
 
             <br><br>
 
-            <p>10 - Qual seu planos para os investimentos?</p>
+            <p>10 - Qual o seu plano para o investimento?</p>
             <br>
 
             <input type="radio" id="planos-investimentos-reserva" name="planos-para-investimentos" value="a">

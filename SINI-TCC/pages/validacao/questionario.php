@@ -10,34 +10,34 @@ if (!$_SESSION['logged_in']) {
 
 $id = $_SESSION["dados_usuario"]["id"];
 
-$renda = "";
-if (!empty($_POST["renda"])) {
-    $renda = $_POST["renda"];
+$idade_usuario = "";
+if (!empty($_POST["idade-usuario"])) {
+    $idade_usuario = $_POST["idade-usuario"];
 }
 
-$investe = "";
-if (!empty($_POST["investe"])) {
-    $investe = $_POST["investe"];
+$dependentes = "";
+if (!empty($_POST["dependentes"])) {
+    $dependentes = $_POST["dependentes"];
 }
 
-$reacao_perda = "";
-if (!empty($_POST["reacao-perda"])) {
-    $reacao_perda = $_POST["reacao-perda"];
+$porcento_renda_investiria = "";
+if (!empty($_POST["porcento-renda-investiria"])) {
+    $porcento_renda_investiria = $_POST["porcento-renda-investiria"];
 }
 
-$suprir_gastos = "";
-if (!empty($_POST["suprir-gastos"])) {
-    $suprir_gastos = $_POST["suprir-gastos"];
+$voce_investe_seu_dinheiro = "";
+if (!empty($_POST["voce-investe-seu-dinheiro"])) {
+    $voce_investe_seu_dinheiro = $_POST["voce-investe-seu-dinheiro"];
 }
 
-$porcentos_sobra = "";
-if (!empty($_POST["porcentos-sobra"])) {
-    $porcentos_sobra = $_POST["porcentos-sobra"];
+$perdendo_investimento = "";
+if (!empty($_POST["perdendo-investimento"])) {
+    $perdendo_investimento = $_POST["perdendo-investimento"];
 }
 
-$controla_dividas = "";
-if (!empty($_POST["controla-dividas"])) {
-    $controla_dividas = $_POST["controla-dividas"];
+$tempo_manter_investimento = "";
+if (!empty($_POST["tempo-manter-investimento"])) {
+    $tempo_manter_investimento = $_POST["tempo-manter-investimento"];
 }
 
 $acompanha_investimentos = "";
@@ -61,107 +61,107 @@ if (!empty($_POST["planos-para-investimentos"])) {
 }
 
 
-if ($renda == null || $investe == null || $reacao_perda == null || $suprir_gastos == null || $porcentos_sobra == null || $controla_dividas == null || $acompanha_investimentos == null || $investiria_algo_subindo == null || $investimentos_pensa == null || $planos_para_investimentos == null) {
+if ($idade_usuario == null || $dependentes == null || $porcento_renda_investiria == null || $voce_investe_seu_dinheiro == null || $perdendo_investimento == null || $tempo_manter_investimento == null || $acompanha_investimentos == null || $investiria_algo_subindo == null || $investimentos_pensa == null || $planos_para_investimentos == null) {
     // echo "<script>window.alert('Por favor, preencher todos os campos!')</script>";
     echo "<script>window.alert('Por favor, preencher todos os campos!')
-        window.location.href = '../pages/questionario_perfil_investidor.php'</script> ";
+                                history.go(-1)</script> ";
     exit();
 }
 
-// $renda;
-// $investe;
-// $reacao_perda;
-// $suprir_gastos;
-// $porcentos_sobra;
-// $controla_dividas;
-// $acompanha_investimentos;
-// $investiria_algo_subindo;
-// $investimentos_pensa;
-// $planos_para_investimentos;
+// echo $idade_usuario;
+// echo $dependentes;
+// echo $porcento_renda_investiria;
+// echo $voce_investe_seu_dinheiro;
+// echo $perdendo_investimento;
+// echo $tempo_manter_investimento;
+// echo $acompanha_investimentos;
+// echo $investiria_algo_subindo;
+// echo $investimentos_pensa;
+// echo $planos_para_investimentos;
 
 $pontos = 0;
 
 // Questão 1
-if ($renda == "a") {
-    $pontos += 4; 
+if ($idade_usuario == "a") {
+    $pontos += 5; 
 
-} else if ($renda == "b") {
+} else if ($idade_usuario == "b") {
     $pontos += 3;
 
-} else if ($renda == "c") {
-    $pontos += 2;
+} else if ($idade_usuario == "c") {
+    $pontos += 1;
 
 }
 
 // Questão 2
-if ($investe == "a") {
-    $pontos += 3; 
+if ($dependentes == "a") {
+    $pontos += 5; 
 
-} else if ($investe == "b") {
+} else if ($dependentes == "b") {
+    $pontos += 3;
+
+} else if ($dependentes == "c") {
     $pontos += 1;
-
-} else if ($investe == "c") {
-    $pontos += 0;
 
 } 
 
 // Questão 3
-if ($reacao_perda == "a") {
+if ($porcento_renda_investiria == "a") {
     $pontos += 1; 
     
-} else if ($reacao_perda == "b") {
+} else if ($porcento_renda_investiria == "b") {
     $pontos += 3;
 
-} else if ($reacao_perda == "c") {
+} else if ($porcento_renda_investiria == "c") {
     $pontos += 5;
 
 } 
 
 // Questão 4
-if ($suprir_gastos == "a") {
+if ($voce_investe_seu_dinheiro == "a") {
     $pontos += 1; 
     
-} else if ($suprir_gastos == "b") {
+} else if ($voce_investe_seu_dinheiro == "b") {
     $pontos += 3;
 
-} else if ($suprir_gastos == "c") {
+} else if ($voce_investe_seu_dinheiro == "c") {
     $pontos += 5;
 
 }
 
 // Questão 5
-if ($porcentos_sobra == "a") {
-    $pontos += 4; 
+if ($perdendo_investimento == "a") {
+    $pontos += 1; 
     
-} else if ($porcentos_sobra == "b") {
-    $pontos += 1;
+} else if ($perdendo_investimento == "b") {
+    $pontos += 3;
 
-} else if ($porcentos_sobra == "c") {
-    $pontos += 0;
+} else if ($perdendo_investimento == "c") {
+    $pontos += 5;
 
 }
 
 // Questão 6
-if ($controla_dividas == "a") {
-    $pontos += 4; 
+if ($tempo_manter_investimento == "a") {
+    $pontos += 5; 
     
-} else if ($controla_dividas == "b") {
+} else if ($tempo_manter_investimento == "b") {
     $pontos += 3;
 
-} else if ($controla_dividas == "c") {
-    $pontos += 2;
+} else if ($tempo_manter_investimento == "c") {
+    $pontos += 1;
 
 } 
 
 // Questão 7
 if ($acompanha_investimentos == "a") {
-    $pontos += 4; 
+    $pontos += 1; 
     
 } else if ($acompanha_investimentos == "b") {
     $pontos += 3;
 
 } else if ($acompanha_investimentos == "c") {
-    $pontos += 2;
+    $pontos += 5;
 
 } 
 
@@ -170,10 +170,10 @@ if ($investiria_algo_subindo == "a") {
     $pontos += 1; 
     
 } else if ($investiria_algo_subindo == "b") {
-    $pontos += 2;
+    $pontos += 3;
 
 } else if ($investiria_algo_subindo == "c") {
-    $pontos += 3;
+    $pontos += 5;
 
 }
 
@@ -191,32 +191,30 @@ if ($investimentos_pensa == "a") {
 
 // Questão 10
 if ($planos_para_investimentos == "a") {
-    $pontos += 4; 
+    $pontos += 1; 
     
 } else if ($planos_para_investimentos == "b") {
-    $pontos += 2;
+    $pontos += 3;
 
 } else if ($planos_para_investimentos == "c") {
-    $pontos += 1;
+    $pontos += 5;
 
 }
 
-
-//Perfil do inestidor;
+//Balanceamento
 $tipo_de_investidor = "";
-if ($pontos >= 8 AND $pontos <= 24) {
-    $tipo_de_investidor = "Defensivo";
-
-} else if ($pontos >= 25 AND $pontos <= 34) {
+if ($pontos >= 10 AND $pontos <= 24) {
     $tipo_de_investidor = "Conservador";
 
-} else if ($pontos >= 35 AND $pontos <= 46) {
+} else if ($pontos >= 25 AND $pontos <= 39) {
     $tipo_de_investidor = "Moderado";
 
-}else if ($pontos >= 47 AND  $pontos <= 55) {
+} else if ($pontos >= 40 AND $pontos <= 50) {
     $tipo_de_investidor = "Agressivo";
 
 }
+
+// echo "Pontos somados " . $pontos;
 
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -227,7 +225,7 @@ $query_insert->execute();
 
 Database::disconnect();
 
-echo "<script>window.alert('Dados enviados para oservidor!')
-            window.location.href = '../pages/index.php'</script> ";
+echo "<script>window.alert('Perfil Avaliado Com Sucesso!')
+            window.location.href = '../pages/investimentos_recomendados.php'</script> ";
 
 ?>
