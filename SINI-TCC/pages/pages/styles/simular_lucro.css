@@ -56,7 +56,16 @@ label {
     margin-left: 15%;
 }
 
-/* div.conteudo button#btn-calcular {
-    text-align: center;
-} */
+.dinheiro-investido, .prazo-meses, .juros-ganhos, .total-ganhos, .imposto-sobre-ganhos, .lucro-bruto {
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin: 10px;
+    padding: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 170px;
+    height: 120px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0 rgb(38 38 38 / 25%);
+}
 
