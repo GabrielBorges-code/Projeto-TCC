@@ -20,10 +20,10 @@ class PaginaPadrao {
             <link rel="stylesheet" href="./styles/index.css">
             <link rel="stylesheet" href="./styles/dropdown.css">
             <link rel="stylesheet" href="./styles/questionario.css">
-            <link rel="stylesheet" href="./styles/perfil.css">
+           
             
             <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-            <script src="../../lib/vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
+            <script src="../lib/vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
 
             <title>SINI</title>
 
@@ -33,18 +33,18 @@ class PaginaPadrao {
 
             <header>
                 <div class="menu">
-                    <a href="index.php"><img class="img-icone" src="../icon/control-panel.png" alt="icone painel de controle"></a>
+                    <a href="index.php"><img class="img-icone" src="./icon/control-panel.png" alt="icone painel de controle"></a>
 
                     <nav>
                         <ul>
 
                             <li>
-                                <a class="botao tp" href="javascript://"><img src="../icon/user.png" alt=""></a>
+                                <a class="botao tp" href="javascript://"><img src="./icon/user.png" alt=""></a>
 
                                 <ul class="dropDown">
                                     <li><a href="perfil.php">Meu Perfil</a></li>
                                     <li><a href="mensagens.php">Mensagens</a></li>
-                                    <li><a href="../validacao/logout.php">Sair</a></li>
+                                    <li><a href="./validacao/logout.php">Sair</a></li>
 
                                 </ul>
                             </li>
@@ -64,7 +64,7 @@ class PaginaPadrao {
         <footer>
             <div class="redes-sociais">
                 <div class="github linkedin">
-                    <a href="https://github.com/GabrielBorges-code/Projeto-TCC" target="_blank" rel="noopener noreferrer"><img class="icone" src="../icon/github.png" alt="Link para o repositorio do projeto"></a>
+                    <a href="https://github.com/GabrielBorges-code/Projeto-TCC" target="_blank" rel="noopener noreferrer"><img class="icone" src="./icon/github.png" alt="Link para o repositorio do projeto"></a>
 
                 </div>
                 <div class="texto">

@@ -10,12 +10,12 @@ class PaginaPadrao {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <link rel="stylesheet" href="./pages/style/reset.css">
-            <link rel="stylesheet" href="./pages/style/padrao.css">
-            <link rel="stylesheet" href="./pages/style/sobre.css">
-            <link rel="stylesheet" href="./pages/style/contato.css">
-            <link rel="stylesheet" href="./pages/style/login.css">
-            <link rel="stylesheet" href="./pages/style/index.css">
+            <link rel="stylesheet" href="./style/reset.css">
+            <link rel="stylesheet" href="./style/padrao.css">
+            <link rel="stylesheet" href="./style/sobre.css">
+            <link rel="stylesheet" href="./style/contato.css">
+            <link rel="stylesheet" href="./style/login.css">
+            <link rel="stylesheet" href="./style/index.css">
       
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="./lib/vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
@@ -76,7 +76,7 @@ class PaginaPadrao {
 
             </footer>
 
-            <script src="./pages/scripts/mask.js"></script>
+            <script src="./scripts/mask.js"></script>
         </body>
 
         </html>

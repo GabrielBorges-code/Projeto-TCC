@@ -8,7 +8,7 @@ div.info-perfil {
     background: #ecf0f5;
     width: 60%;
     height: 700px;
-    margin-top: 50px;
+    margin-top: 150px;
     border-radius: 2%;
     box-shadow: 6px 7px 26px rgb(0 0 0 / 20%);
 }
@@ -52,3 +52,28 @@ li.perfil b {
     transition: 0.5s all;
     cursor: pointer;    
 }
+
+.btn-access:hover{
+    background-color: #f7b900;
+    /* transform: scale(1.2); */
+}
+
+.input-edicao {
+    display: inline-block;
+    float: right;
+
+}
+
+.input-padrao {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 250px;
+    text-align: center;
+}
+
+button#alinhar-direita {
+    float: right;
+    background: #212529;
+    color: white;
+}
+

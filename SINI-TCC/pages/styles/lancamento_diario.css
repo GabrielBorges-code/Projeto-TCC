@@ -39,11 +39,16 @@ form {
     cursor: pointer;
 }
 
+.btn-access:hover{
+    background-color: #f7b900;
+    /* transform: scale(1.2); */
+}
+
 #btn-lancar {
     width: 8%;
     position: absolute;
     top: 270px;
-    right: 16%;
+    right: 15.5%;
 }
 
 div.conteudo table {

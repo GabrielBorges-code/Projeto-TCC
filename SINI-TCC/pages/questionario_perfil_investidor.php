@@ -1,5 +1,5 @@
 <?php
-require('../../config/database.php');
+require('../config/database.php');
 
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
@@ -22,7 +22,7 @@ $pagina_padrao->cabecalho();
 
         <br>
 
-        <form method="POST" action="../validacao/questionario.php">
+        <form method="POST" action="./validacao/questionario.php">
 
             <p>1 - Qual é a sua idade?</p>
             <br>

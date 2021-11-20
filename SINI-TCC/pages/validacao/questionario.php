@@ -226,6 +226,6 @@ $query_insert->execute();
 Database::disconnect();
 
 echo "<script>window.alert('Perfil Avaliado Com Sucesso!')
-            window.location.href = '../pages/investimentos_recomendados.php'</script> ";
+            window.location.href = '../investimentos_recomendados.php'</script> ";
 
 ?>

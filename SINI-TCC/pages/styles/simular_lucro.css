@@ -58,6 +58,7 @@ label {
 
 .dinheiro-investido, .prazo-meses, .juros-ganhos, .total-ganhos, .imposto-sobre-ganhos, .lucro-bruto {
     /* display: inline-block; */
+    text-align: center;
     vertical-align: middle;
     margin: 10px;
     padding: 18px;
