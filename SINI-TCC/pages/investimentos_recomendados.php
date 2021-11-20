@@ -1,5 +1,5 @@
 <?php
-require('../../config/database.php');
+require('../config/database.php');
 
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
@@ -15,7 +15,11 @@ $pagina_padrao->cabecalho();
 ?>
 
 <main>
-    <p>Página de mensagens</p>
+    <div class="conteudo">
+        <p>Avaliamos o seu perfil, o melhor investimento que combina com você é</p>
+
+    </div>
+
 </main>
 
 <?php

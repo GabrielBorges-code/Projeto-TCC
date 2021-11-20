@@ -36,7 +36,7 @@ try {
     //Content
     $mail->isHTML(true);
     $mail->Subject = utf8_decode('Boas vindas - Sistema Indicação de Investimentos e Gerenciamento de Capital');
-    $mail->Body    = utf8_decode('Seja bem vindo ao Sistema Indicação de Investimentos e Gerenciamento de Capital. Agora você está cadastrado em nossa plataforma! 😉<br>');
+    $mail->Body    = utf8_decode('Seja bem vindo ao Sistema Indicação de Investimentos e Gerenciamento de Capital. Agora você está cadastrado em nossa plataforma! ;-)<br><br><br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital');
 
     $mail->send();
 

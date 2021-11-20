@@ -1,5 +1,5 @@
 <?php
-require('../../config/database.php');
+require('../config/database.php');
 
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
@@ -72,9 +72,6 @@ Database::disconnect();
       }
 
     ?>
-
-  
-
 
     <a href="simular_lucro.php"><button type="button" class="btn-perfil">Simular Lucro</button></a>
     <a href="lancamento_diario.php"><button type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button></a>

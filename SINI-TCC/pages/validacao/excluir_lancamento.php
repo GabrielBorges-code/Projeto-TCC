@@ -17,4 +17,4 @@ $query_deletar->execute();
 
 Database::disconnect();
 
-header("Location: /projeto-TCC/SINI-TCC/pages/pages/lancamento_diario.php");
+header("Location: /projeto-TCC/SINI-TCC/pages/lancamento_diario.php");

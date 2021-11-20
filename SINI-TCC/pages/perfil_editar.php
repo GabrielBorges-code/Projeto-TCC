@@ -1,5 +1,5 @@
 <?php
-require('../../config/database.php');
+require('../config/database.php');
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
 

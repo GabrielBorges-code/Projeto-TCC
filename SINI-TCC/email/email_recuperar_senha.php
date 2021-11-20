@@ -54,7 +54,7 @@ if ($email_existe == 0) {
         //Content
         $mail->isHTML(true);
         $mail->Subject = utf8_decode('Recuper Senha - Sistema  Indicação de Investimentos e Gerenciamento de Capital');
-        $mail->Body    = utf8_decode("Prezado usuário, tudo bem?<br>Você solicitou a recuperação de senha, click no link para cadastrar uma <a href='http://localhost/projeto-TCC/SINI-TCC/recuperar_senha.php?email={$email}' target='_blank' rel='noopener noreferrer'>nova senha</a>.<br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital");
+        $mail->Body    = utf8_decode("Prezado usuário, tudo bem?<br>Você solicitou a recuperação de senha, click no link para cadastrar uma <a href='http://localhost/projeto-TCC/SINI-TCC/recuperar_senha.php?email={$email}' target='_blank' rel='noopener noreferrer'>nova senha</a>.<br><br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital");
     
         $mail->send();
     

@@ -1,5 +1,5 @@
 <?php
-require('../../config/database.php');
+require('../config/database.php');
 
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
@@ -43,7 +43,7 @@ $pagina_padrao->cabecalho();
     <div class="conteudo">
         <h1>Lançamento Diário</h1>
 
-        <form method="POST" action="../validacao/lancamento_diario.php?id=<?= $id ?>">
+        <form method="POST" action="./validacao/lancamento_diario.php?id=<?= $id ?>">
 
             <label for="data">Dia</label>
             <input name="data" type="date" id="data" type="date" class="input-padrao" value="<?= date('Y-m-d') ?>" max="2030-12-31" min="2020-01-01"  required/>
@@ -76,7 +76,7 @@ $pagina_padrao->cabecalho();
                         echo "<td> R$ " . $dados["resultado_dia"] . "</td>";
                         echo "<td> R$ " . $dados["saldo_virtual"] . "</td>";
 
-                        echo "<td><a href='../validacao/excluir_lancamento.php?id=" . $dados["id"] . "'><img src='../icon/excluir.png' alt='imagem para fazer a exclusão do item'></a></td>";
+                        echo "<td><a href='./validacao/excluir_lancamento.php?id=" . $dados["id"] . "'><img src='./icon/excluir.png' alt='imagem para fazer a exclusão do item'></a></td>";
 
                         echo "</tr>";
                     }
