@@ -22,7 +22,7 @@ $pagina_padrao->cabecalho();
 
         <br>
 
-        <form method="POST" action="../validacao/questionario.php">
+        <form method="POST" action="./validacao/questionario.php">
 
             <p>1 - Qual é a sua idade?</p>
             <br>

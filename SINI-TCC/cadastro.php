@@ -17,7 +17,7 @@ $pagina_padrao->cabecalho();
         <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@gmail.com">
 
         <label for="telefone">Telefone</label>
-        <input type="tel" name="telefone" id="telefone" class="input-padrao" min="1" max="11" required placeholder="(61)98888-7777">
+        <input type="tel" name="telefone" id="telefone" class="input-padrao" min="1" max="11" required placeholder="(61) 9 8888-7777">
 
         <label for="password">Senha</label>
         <input type="password" name="senha" id="password" class="input-padrao" required placeholder="********">

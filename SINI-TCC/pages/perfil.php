@@ -24,11 +24,11 @@ $login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
 Database::disconnect();
 
 ?>
-<!-- <link rel="stylesheet" href="./styles/perfil.css"> -->
+<link rel="stylesheet" href="./styles/perfil.css">
 
 <main class="perfil">    
     <div class="info-perfil">
-        <img class="img-perfil" src="./image/user.png" >
+        <img class="img-perfil" src="./icon/user.png" >
         
         <ul class="perfil">
 
@@ -52,7 +52,6 @@ Database::disconnect();
             echo "<li class='perfil'><a href='perfil_editar.php?id=$id'><button type='button' class='btn-access'>Editar Perfil</button></a></li>";
             
             ?>
-
 
         </ul>
 
