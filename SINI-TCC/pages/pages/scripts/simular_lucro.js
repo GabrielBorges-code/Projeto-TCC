@@ -24,17 +24,19 @@ function calcular () {
     var inputPrazo = document.querySelector("input#prazo");
     var inputRentabilidade = document.querySelector("input#rentabilidade");
 
-    var lucro = inputValorInvestido.value * (inputRentabilidade.value / 100 * inputPrazo.value);
-    // var lucro = inputValorInvestido.value * (inputRentabilidade.value / 100) / inputPrazo.value;
-    
-    var apenasLucro = lucro - inputValorInvestido.value;
-    var impostoSobreGanhos =  lucro - (apenasLucro * 0.175);
+    // var lucro = nputValorInvestido.value * (inputRentabilidade.value / 100  * inputPrazo.value);
+    var jurosAoMes = (inputRentabilidade.value / 100) / 12;
+    var lucro = inputValorInvestido.value * jurosAoMes * inputPrazo.value;
+
+    var totalizando = parseFloat(inputValorInvestido.value) + lucro;
+
+    var impostoSobreGanhos =  totalizando - (lucro * 0.175);
 
     dinheiroInvestido.innerHTML = "Você investiu R$ " + inputValorInvestido.value;
     prazoMeses.innerHTML = "Por " + inputPrazo.value + " Meses";
     jurosGanhos.innerHTML = "Com rentabilidade de " + inputRentabilidade.value + "% ao ano";
-    lucroBruto.innerHTML = "Recebeu o valor bruto de R$ " + apenasLucro.toFixed(2);
-    totalGanhos.innerHTML = "Totalizando R$ " + lucro.toFixed(2);
+    lucroBruto.innerHTML = "Recebeu o valor bruto de R$ " + lucro.toFixed(2);
+    totalGanhos.innerHTML = "Totalizando R$ " + totalizando.toFixed(2);
     imposto.innerHTML = "Imposto sobre ganhos de 17.5%, R$ " + impostoSobreGanhos.toFixed(2);
 
 }
