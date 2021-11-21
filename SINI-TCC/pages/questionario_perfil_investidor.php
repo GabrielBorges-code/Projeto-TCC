@@ -13,16 +13,11 @@ if (!$_SESSION['logged_in']) {
 $pagina_padrao->cabecalho();
 
 ?>
-<style>
-   
-
-</style>
-
 <main>
 
     <div class="questionario">
 
-        <h1>Quetionário Perfíl do Investidor</h1>
+        <h1>Questionário Perfíl do Investidor</h1>
 
         <br>
 

@@ -52,7 +52,7 @@ $pagina_padrao->cabecalho();
             <input name="resultado-dia" type="number" id="resultadoDia" class="input-padrao" required/>
 
             <label for="valorSaldoVirtual" id="labelValorSaldoVirtual">Saldo Virtual Inicial R$:</label>
-            <input name="valor-saldo-virtual" type="text" id="valorSaldoVirtual" value="<?= $value ?>" <?= $readonly ?> class="input-padrao" required/>
+            <input name="valor-saldo-virtual" type="number" id="valorSaldoVirtual" value="<?= $value ?>" <?= $readonly ?> class="input-padrao" required/>
 
             <button type="submit" id="btn-lancar" class="btn-access">Lançar</button>
 
