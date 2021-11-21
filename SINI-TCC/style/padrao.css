@@ -93,15 +93,19 @@ nav a:hover {
 }
 
 main {
-    
     width: 1100px;
     margin: 0 auto;
-    min-height: 1200px;
+    /* height: 100%; */
+    /* min-height: 600px; */
 }
 
 footer {
     text-align: center;
-
+    margin-top: 50px;
+    width: 100%;
+    /* flex-shrink: 0; */
+    /* position: absolute;
+    bottom: 0; */
 } 
 
 .icone {

@@ -17,17 +17,32 @@ $id = $_SESSION["dados_usuario"]["id"];
 $pdo = Database::connect();
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql = "SELECT questionario_perfil_investidor.*, usuario.nome, usuario.email, usuario.telefone FROM questionario_perfil_investidor INNER JOIN usuario ON usuario.id = questionario_perfil_investidor.id WHERE usuario.id = $id";
-$query = $pdo->prepare($sql);
-$query->execute();
-$login_usuario = $query->fetchAll(PDO::FETCH_ASSOC);
+$sql_questionario = "SELECT * FROM questionario_perfil_investidor WHERE id = $id";
+$query_questionario = $pdo->prepare($sql_questionario);
+$query_questionario->execute();
+$dados_usuario_questionario = $query_questionario->fetchAll(PDO::FETCH_ASSOC);
+
+// var_dump($dados_usuario_questionario);
+
+$sql_usuario = "SELECT * FROM usuario WHERE id = $id";
+$query_usuario = $pdo->prepare($sql_usuario);
+$query_usuario->execute();
+$dados_usuario = $query_usuario->fetchAll(PDO::FETCH_ASSOC);
+
+// var_dump($dados_usuario);
 
 Database::disconnect();
 
-$nome = $login_usuario[0]['nome'];
-$email = $login_usuario[0]['email'];
-$telefone = $login_usuario[0]['telefone'];
-$tipo_de_investidor = $login_usuario[0]['tipo_de_investidor'];
+$nome = $dados_usuario[0]['nome'];
+$email = $dados_usuario[0]['email'];
+$telefone = $dados_usuario[0]['telefone'];
+
+if (!empty($dados_usuario_questionario[0]['tipo_de_investidor'])) {
+    $perfil_investidor = $dados_usuario_questionario[0]['tipo_de_investidor'];
+
+} else {
+    $perfil_investidor = "Questionário ainda não respondido";
+}
 
 ?>
 
@@ -41,23 +56,23 @@ $tipo_de_investidor = $login_usuario[0]['tipo_de_investidor'];
 
             <hr>
             <form method="POST" action="./validacao/editar_dados_perfil.php?id=<?= $id ?>">
-                <li class="perfil"><b class="nome-edicao">Nome</b>
+                <li class="perfil"><b class="nome-edicao">Nome:</b>
                     <div class="input-edicao"> <?php echo "<input class='input-padrao' type='text' name='nome-usuario' value='$nome' id=''>"; ?> </div>
                 </li>
                 <hr>
 
-                <li class="perfil"><b class="nome-edicao">E-mail</b>
+                <li class="perfil"><b class="nome-edicao">E-mail:</b>
                     <div class="input-edicao"> <?php echo "<input class='input-padrao' type='email' name='email' value='$email' id=''>"; ?> </div>
                 </li>
                 <hr>
 
-                <li class="perfil"><b class="nome-edicao">Telefone</b>
+                <li class="perfil"><b class="nome-edicao">Telefone:</b>
                     <div class="input-edicao"> <?php echo "<input class='input-padrao' type='tel' id='telefone' min='1' max='11' placeholder='(61) 9 8888-7777' name='telefone' value='$telefone' id=''>"; ?> </div>
                 </li>
                 <hr>
 
-                <li class="perfil"><b class="nome-edicao">Tipo de Investidor</b>
-                    <div class="input-edicao"> <?php echo "<input class='input-padrao' type='text' name='perfil-investidor' disabled='' value='$tipo_de_investidor' id=''>"; ?> </div>
+                <li class="perfil"><b class="nome-edicao">Tipo de Investidor:</b>
+                    <div class="input-edicao"> <?php echo "<input class='input-padrao' type='text' name='perfil-investidor' disabled='' value='$perfil_investidor' id=''>"; ?> </div>
                 </li>
                 <hr>
 

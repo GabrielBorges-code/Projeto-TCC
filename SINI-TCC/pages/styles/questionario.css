@@ -1,6 +1,7 @@
 div.questionario {
-    height: 60%;
+    /* height: 60%; */
     padding: 50px;
+    min-height: 300px;
    
 }
 
@@ -39,6 +40,30 @@ div.questionario form button {
 .btn-enviar:hover{
     background-color: #f7b900;
     /* transform: scale(1.2); */
+}
+
+.wall {
+    display: none;
+   
+}
+
+.wall:target {
+    display: block;
+
+}
+
+img.botao-anterior {
+    /* float: right; */
+    position: absolute;
+    top: 230px;
+    left: 145px;
+}
+
+img.botao-proximo {
+    /* float: right; */
+    position: absolute;
+    top: 230px;
+    right: 145px;
 }
 
 @media screen and (max-width: 480px) {
