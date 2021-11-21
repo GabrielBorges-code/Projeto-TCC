@@ -13,10 +13,14 @@ if (!$_SESSION['logged_in']) {
 $pagina_padrao->cabecalho();
 
 ?>
+<link rel="stylesheet" href="./styles/investimentos_recomendados.css">
 
 <main>
     <div class="conteudo">
+        <h1>Sugestão de investimentos</h1>
         <p>Avaliamos o seu perfil, o melhor investimento que combina com você é</p>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     </div>
 
