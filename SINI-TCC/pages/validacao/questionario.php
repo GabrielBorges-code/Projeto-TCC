@@ -68,16 +68,16 @@ if ($idade_usuario == null || $dependentes == null || $porcento_renda_investiria
     exit();
 }
 
-// echo $idade_usuario;
-// echo $dependentes;
-// echo $porcento_renda_investiria;
-// echo $voce_investe_seu_dinheiro;
-// echo $perdendo_investimento;
-// echo $tempo_manter_investimento;
-// echo $acompanha_investimentos;
-// echo $investiria_algo_subindo;
-// echo $investimentos_pensa;
-// echo $planos_para_investimentos;
+echo $idade_usuario;
+echo $dependentes;
+echo $porcento_renda_investiria;
+echo $voce_investe_seu_dinheiro;
+echo $perdendo_investimento;
+echo $tempo_manter_investimento;
+echo $acompanha_investimentos;
+echo $investiria_algo_subindo;
+echo $investimentos_pensa;
+echo $planos_para_investimentos;
 
 $pontos = 0;
 
@@ -214,18 +214,18 @@ if ($pontos >= 10 AND $pontos <= 24) {
 
 }
 
-// echo "Pontos somados " . $pontos;
+echo "Pontos somados " . $pontos;
 
-$pdo = Database::connect();
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// $pdo = Database::connect();
+// $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql_insert = "INSERT INTO questionario_perfil_investidor (id, pontos, tipo_de_investidor) VALUES ($id, '$pontos', '$tipo_de_investidor')";
-$query_insert = $pdo->prepare($sql_insert);
-$query_insert->execute();
+// $sql_insert = "INSERT INTO questionario_perfil_investidor (id, pontos, tipo_de_investidor) VALUES ($id, '$pontos', '$tipo_de_investidor')";
+// $query_insert = $pdo->prepare($sql_insert);
+// $query_insert->execute();
 
-Database::disconnect();
+// Database::disconnect();
 
-echo "<script>window.alert('Perfil Avaliado Com Sucesso!')
-            window.location.href = '../investimentos_recomendados.php'</script> ";
+// echo "<script>window.alert('Perfil Avaliado Com Sucesso!')
+//             window.location.href = '../investimentos_recomendados.php'</script> ";
 
 ?>
