@@ -8,6 +8,8 @@ USE sistema_investimento_tcc;
 
 ALTER DATABASE sistema_investimento_tcc DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
+-- Tabela para cadastro do usuário
+
 CREATE TABLE IF NOT EXISTS usuario (
     id int (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nome varchar (100),
@@ -15,7 +17,9 @@ CREATE TABLE IF NOT EXISTS usuario (
     telefone varchar (20),
     senha varchar (500)
 
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+);
+
+-- Tabela para mensagens externas
 
 CREATE TABLE IF NOT EXISTS mensagem_contato (
 	id int (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -23,9 +27,9 @@ CREATE TABLE IF NOT EXISTS mensagem_contato (
     telefone varchar (20),
     nome varchar (100),
     mensagem TEXT
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+);
 
--- fazer tabela para questionario
+-- Tabela para questionario
 
 CREATE TABLE IF NOT EXISTS questionario_perfil_investidor (
     id int (11) NOT NULL PRIMARY KEY,
@@ -34,7 +38,7 @@ CREATE TABLE IF NOT EXISTS questionario_perfil_investidor (
 
     FOREIGN KEY (id) REFERENCES usuario(id)
 
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+);
 
 -- lancamento_diario
 

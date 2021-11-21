@@ -55,15 +55,17 @@ div.questionario form button {
 img.botao-anterior {
     /* float: right; */
     position: absolute;
-    top: 230px;
+    top: 250px;
     left: 145px;
+    width: 35px;
 }
 
 img.botao-proximo {
     /* float: right; */
     position: absolute;
-    top: 230px;
+    top: 250px;
     right: 145px;
+    width: 35px;
 }
 
 @media screen and (max-width: 480px) {

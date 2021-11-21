@@ -25,7 +25,7 @@ $pagina_padrao->cabecalho();
 
             <div class="wall" id="wall-1">
 
-                <a href="#wall-10"><img class="botao-anterior" src="./icon/before.png" alt="botão de anterior"></a>
+                <!-- <a href="#wall-10"><img class="botao-anterior" src="./icon/before.png" alt="botão de anterior"></a> -->
 
                 <p>1 - Qual é a sua idade?</p>
                 <br>
@@ -185,7 +185,7 @@ $pagina_padrao->cabecalho();
                 <input type="radio" id="planos-investimentos-reinvestir" name="planos-para-investimentos" value="c">
                 <label for="planos-investimentos-reinvestir">Reinvestir o dinheiro cada vez mais.</label><br>
 
-                <a href="#wall-1"><img class="botao-proximo" src="./icon/next.png" alt="botão de próximo"></a>
+                <!-- <a href="#wall-1"><img class="botao-proximo" src="./icon/next.png" alt="botão de próximo"></a> -->
 
                 <br><br><br><br>
 
