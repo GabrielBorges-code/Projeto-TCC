@@ -30,7 +30,7 @@ if($login_usuario['COUNT(nome)'] == 1){
 
 } else {
     echo "<script>window.alert('Usuário ou senha incorreto!')
-    window.location.href = '../../login.php'</script>";
+        history.go(-1)</script>";
     $_SESSION['logged_in'] = false;
     $_SESSION["dados_usuario"] = null; 
     exit();

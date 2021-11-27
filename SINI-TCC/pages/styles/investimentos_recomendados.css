@@ -14,3 +14,33 @@ div.conteudo h1 {
     margin-bottom: 25px;
 
 }
+
+div.conteudo b {
+    font-weight: bold;
+}
+
+div.conteudo img {
+    width: 40%;
+}
+
+div.conteudo table {
+    text-align: center;
+    margin: 70px auto 70px auto;
+    width: 500px;
+}
+
+table th {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 140px;
+}
+
+table tr th#excluir-lancamento {
+    width: 114px;
+
+}

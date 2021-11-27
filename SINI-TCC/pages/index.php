@@ -64,20 +64,24 @@ Database::disconnect();
 
     <?php
       if (empty($dados_consulta)) {
-        echo "<a href='questionario_perfil_investidor.php'><button type='button' class='btn-perfil'>Quetionario Perfil do Investidor</button></a>";
+        echo "<button onclick=\"window.location='questionario_perfil_investidor.php'\" type='button' class='btn-perfil'>Quetionario Perfil do Investidor</button>";
         
       } else {
-        echo "<a href='investimentos_recomendados.php'><button type='button' class='btn-perfil'>Investimentos Recomendados</button></a>";
+        echo "<button onclick=\"window.location='investimentos_recomendados.php'\" type='button' class='btn-perfil'>Investimentos Recomendados</button>";
 
       }
 
     ?>
 
-    <a href="simular_lucro.php"><button type="button" class="btn-perfil">Simular Lucro</button></a>
-    <a href="lancamento_diario.php"><button type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button></a>
-    <a href="#"><button type="button" class="btn-perfil">Gerar Relatório</button></a>
+    <button onclick="window.location='simular_lucro.php'" type="button" class="btn-perfil">Simular Lucro</button>
+    <button onclick="window.location='lancamento_diario.php'" type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button>
+    <button onclick="window.location='#'" type="button" class="btn-perfil">Gerar Relatório</button>
 
   </div>
+
+  <br><br><br>
+
+  <p>Um gráfico para realizar análises com indicadores técnicos para aqueles que desejam realizar operações na bolsa</p>
 
   <br><br><br>
 
