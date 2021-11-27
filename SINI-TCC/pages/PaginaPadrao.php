@@ -1,10 +1,21 @@
 <?php
 
 class PaginaPadrao {
-
-    // <link rel="stylesheet" href="./styles/perfil.css">
-    
     function cabecalho(){
+        $id = $_SESSION["dados_usuario"]["id"];
+        $imagem_perfil = "./img_perfil/{$id}/";
+
+        if (!is_dir($imagem_perfil)) {
+            $caminho_ft_perfil = "./icon/user.png";
+        } else {
+            $diretorio = "./img_perfil/{$id}/";
+            $arquivo = scandir($diretorio, 0);
+
+            for ($i = 2; $i < count($arquivo); $i++) {
+                $caminho_ft_perfil =  $diretorio . $arquivo[$i];
+                
+            }
+        }
         echo'
         <!DOCTYPE html>
         <html lang="pt-BR">
@@ -39,7 +50,7 @@ class PaginaPadrao {
                         <ul>
 
                             <li>
-                                <a class="botao tp" href="javascript://"><img src="./icon/user.png" alt=""></a>
+                                <a class="botao tp" href="javascript://"><img src="' . $caminho_ft_perfil .'" alt=""></a>
 
                                 <ul class="dropDown">
                                     <li><a href="perfil.php">Meu Perfil</a></li>

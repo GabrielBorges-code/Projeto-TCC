@@ -44,18 +44,39 @@ if (!empty($dados_usuario_questionario[0]['tipo_de_investidor'])) {
     $perfil_investidor = "Questionário ainda não respondido";
 }
 
+$imagem_perfil = "./img_perfil/{$id}/";
+
+if (!is_dir($imagem_perfil)) {
+    $caminho_ft_perfil = "./icon/user.png";
+} else {
+    $diretorio = "./img_perfil/{$id}/";
+    $arquivo = scandir($diretorio, 0);
+
+    for ($i = 2; $i < count($arquivo); $i++) {
+        $caminho_ft_perfil =  $diretorio . $arquivo[$i];
+        
+    }
+}
+
 ?>
 
 <link rel="stylesheet" href="./styles/perfil.css">
 
 <main class="perfil">
-    <div class="info-perfil">
-        <img class="img-perfil" src="./icon/user.png">
+    <div class="info-perfil" id="perfil-edicao">
+        <img class="img-perfil" src="<?= $caminho_ft_perfil ?>">
 
         <ul class="perfil">
+           
+            <form method="POST" enctype="multipart/form-data" action="./validacao/perfil_save.php?id=<?= $id ?>">
+                <center>
+                    <label for="foto-perfil">Escolha uma foto de perfil</label> <br>
+                    <input type="file" accept="image/*" name="foto-perfil" id="foto-perfil">
 
-            <hr>
-            <form method="POST" action="./validacao/editar_dados_perfil.php?id=<?= $id ?>">
+                </center>
+                
+                <br><hr>
+
                 <li class="perfil"><b class="nome-edicao">Nome:</b>
                     <div class="input-edicao"> <?php echo "<input class='input-padrao' type='text' name='nome-usuario' value='$nome' id=''>"; ?> </div>
                 </li>
@@ -79,9 +100,9 @@ if (!empty($dados_usuario_questionario[0]['tipo_de_investidor'])) {
                 <br>
 
                 <li class='perfil'>
-                    <a href='perfil_editar.php?id=<?= $id ?>'><button type='submit' class='btn-access'>Salvar</button></a>
+                   <button type='submit' class='btn-access'>Salvar</button>
 
-                    <button type='submit' id="alinhar-direita" class='btn-access' onclick="window.history.go(-1); return false;">Voltar</button>
+                    <button type='submit' id="alinhar-direita" class='btn-access' onclick="window.history.go(-1); return false;">Cancelar</button>
                 </li>
 
             </form>

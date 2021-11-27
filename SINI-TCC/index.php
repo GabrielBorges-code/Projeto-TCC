@@ -87,17 +87,17 @@ $pagina_padrao->cabecalho();
         <h1>Perfis de Investidores</h1>
         <p>Existem 3 tipos de perfis de investidores, podemos classificá-los como, conservador, moderado e agressivo, cada um desses perfis contêm características próprias, e são classificados de acordo com o risco que cada investimento possui.</p>
 
-        <p><b>O conservador</b>, é o investidor que têm maior aversão ao risco – isto é, preferem investir seu dinheiro em produtos que apresentem nenhum ou baixo risco. No geral, podemos dizer que o investidor conservador busca receber ganhos reais com o menor risco possível, mesmo que para isso tenha que abrir mão de certa rentabilidade.</p>
+        <p>O <b>conservador</b>, é o investidor que têm maior aversão ao risco – isto é, preferem investir seu dinheiro em produtos que apresentem nenhum ou baixo risco. No geral, podemos dizer que o investidor conservador busca receber ganhos reais com o menor risco possível, mesmo que para isso tenha que abrir mão de certa rentabilidade.</p>
 
-        <img src="./pages/img/conservador.png" alt="Gráfico do perfil investidor conservador">
+        <img src="./img/conservador.png" alt="Gráfico do perfil investidor conservador">
 
-        <p><b>O Moderado</b>, é o investidor que corre um risco médio em suas aplicações – ele está disposto a assumir riscos um pouco maiores para ter uma rentabilidade também maior; mas, ao mesmo tempo, não abre mão de certa segurança. Por isso, ele investe tanto em renda fixa, mais segura, quanto em outras opções, como fundos multimercados (de médio risco) e até ações.</p>
+        <p>O <b>Moderado</b>, é o investidor que corre um risco médio em suas aplicações – ele está disposto a assumir riscos um pouco maiores para ter uma rentabilidade também maior; mas, ao mesmo tempo, não abre mão de certa segurança. Por isso, ele investe tanto em renda fixa, mais segura, quanto em outras opções, como fundos multimercados (de médio risco) e até ações.</p>
 
-        <img src="./pages/img/moderado.png" alt="Gráfico do perfil investidor conservador">
+        <img src="./img/moderado.png" alt="Gráfico do perfil investidor moderado">
 
-        <p><b>O agressivo</b>, por sua vez, está disposto a correr riscos para ter maior rentabilidade – e até perder parte de seu patrimônio em nome disso. Em uma carteira de investimentos, a maior parte de suas aplicações está em produtos de renda variável – ações, fundos de ações, opções, entre outros.</p>
+        <p>O <b>agressivo</b>, por sua vez, está disposto a correr riscos para ter maior rentabilidade – e até perder parte de seu patrimônio em nome disso. Em uma carteira de investimentos, a maior parte de suas aplicações está em produtos de renda variável – ações, fundos de ações, opções, entre outros.</p>
 
-        <img src="./pages/img/agressivo.png" alt="Gráfico do perfil investidor conservador">
+        <img src="./img/agressivo.png" alt="Gráfico do perfil investidor agressivo">
     </div>
 
 </main>

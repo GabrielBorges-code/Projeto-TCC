@@ -38,44 +38,61 @@ $telefone = $dados_usuario[0]['telefone'];
 
 if (!empty($dados_usuario_questionario[0]['tipo_de_investidor'])) {
     $perfil_investidor = $dados_usuario_questionario[0]['tipo_de_investidor'];
-
 } else {
     $perfil_investidor = "Questionário ainda não respondido";
+}
+
+$imagem_perfil = "./img_perfil/{$id}/";
+
+if (!is_dir($imagem_perfil)) {
+    $caminho_ft_perfil = "./icon/user.png";
+} else {
+    $diretorio = "./img_perfil/{$id}/";
+    $arquivo = scandir($diretorio, 0);
+
+    for ($i = 2; $i < count($arquivo); $i++) {
+        $caminho_ft_perfil =  $diretorio . $arquivo[$i];
+        
+    }
 }
 
 ?>
 <link rel="stylesheet" href="./styles/perfil.css">
 
-<main class="perfil">    
+<main class="perfil">
     <div class="info-perfil">
-        <img class="img-perfil" src="./icon/user.png" >
-        
+        <img class="img-perfil" src="<?= $caminho_ft_perfil ?>" alt="imagem de perfil do usuário">
+
         <ul class="perfil">
 
             <hr>
 
-            <li class="perfil"><b>Nome:</b> <div class="alinha-direita"> <?= $nome ?> </div></li>
+            <li class="perfil"><b>Nome:</b>
+                <div class="alinha-direita"> <?= $nome ?> </div>
+            </li>
             <hr>
 
-            <li class="perfil"><b>E-mail:</b> <div class="alinha-direita"> <?= $email ?> </div></li>
+            <li class="perfil"><b>E-mail:</b>
+                <div class="alinha-direita"> <?= $email ?> </div>
+            </li>
             <hr>
 
-            <li class="perfil"><b>Telefone:</b> <div class="alinha-direita"> <?= $telefone ?> </div></li>
+            <li class="perfil"><b>Telefone:</b>
+                <div class="alinha-direita"> <?= $telefone ?> </div>
+            </li>
             <hr>
 
-            <li class="perfil"><b>Tipo de Investidor:</b> <div class="alinha-direita"> <?= $perfil_investidor ?> </div></li>
+            <li class="perfil"><b>Tipo de Investidor:</b>
+                <div class="alinha-direita"> <?= $perfil_investidor ?> </div>
+            </li>
             <hr>
 
             <br>
 
-            <?php
-            echo "<li class='perfil'><a href='perfil_editar.php?id=$id'><button type='button' class='btn-access'>Editar Perfil</button></a></li>";
-            
-            ?>
+            <button type='button' onclick="window.location='perfil_edicao.php?id=<?= $id ?>'" class='btn-access'>Editar Perfil</button>
 
         </ul>
 
-        
     </div>
 
 </main>
