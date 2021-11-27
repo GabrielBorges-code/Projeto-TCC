@@ -71,3 +71,8 @@ table tr th#excluir-lancamento {
     width: 114px;
 
 }
+
+button#gerar-relatorio {
+    display: block;
+    margin: 50px auto 0 auto;
+}

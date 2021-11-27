@@ -67,9 +67,18 @@ $pagina_padrao->cabecalho();
 
             </table>
 
-            <p>O <b>conservador</b>, é o investidor que têm maior aversão ao risco – isto é, preferem investir seu dinheiro em produtos que apresentem nenhum ou baixo risco. No geral, podemos dizer que o investidor conservador busca receber ganhos reais com o menor risco possível, mesmo que para isso tenha que abrir mão de certa rentabilidade.</p>
+            <p>O <b>Conservador</b>, é o investidor que têm maior aversão ao risco – isto é, preferem investir seu dinheiro em produtos que apresentem nenhum ou baixo risco. No geral, podemos dizer que o investidor conservador busca receber ganhos reais com o menor risco possível, mesmo que para isso tenha que abrir mão de certa rentabilidade.</p>
 
             <img src='../img/conservador.png' alt='Gráfico do perfil investidor conservador'>
+            
+            <ul>
+                <li>Os <b>Fundos de Renda Fixa</b> possuem pelo menos 80% da sua carteira investida em ativos de renda fixa.</li><br>
+                
+                <li><b>Renda Fixa</b> é uma classe de ativos na qual é possível prever a rentabilidade final, por isso, são mais seguros.</li><br>
+
+                <li>O <b>Tesouro Direto</b> é um programa do Tesouro Nacional do Brasil que visa a captação de recursos para o Governo.</li><br>
+            </ul>
+
             ";
         } else if ($perfil_investidor == "Moderado") {
             echo "
@@ -99,6 +108,13 @@ $pagina_padrao->cabecalho();
             <p>O <b>Moderado</b>, é o investidor que corre um risco médio em suas aplicações – ele está disposto a assumir riscos um pouco maiores para ter uma rentabilidade também maior; mas, ao mesmo tempo, não abre mão de certa segurança. Por isso, ele investe tanto em renda fixa, mais segura, quanto em outras opções, como fundos multimercados (de médio risco) e até ações.</p>
 
             <img src='../img/moderado.png' alt='Gráfico do perfil investidor moderado'>
+            <ul>
+                <li>Os <b>Fundos Imobiliários</b> são formados por recursos de diversos investidores que são destinados à compra ou venda de ativos físicos ou valores imobiliários.</li><br>
+
+                <li>Os <b>Fundos Multimercados</b> são uma categoria de fundos de investimento que investem em diferentes classes de ativos financeiros.</li><br>
+
+                <li>O <b>Fundo de Previdência</b> tem o objetivo de guardar dinheiro para a aposentadoria ou outros objetivos de longo prazo.</li><br>
+            </ul>
             ";
         } else if ($perfil_investidor == "Agressivo") {
             echo "
@@ -133,6 +149,14 @@ $pagina_padrao->cabecalho();
             <p>O <b>agressivo</b>, por sua vez, está disposto a correr riscos para ter maior rentabilidade – e até perder parte de seu patrimônio em nome disso. Em uma carteira de investimentos, a maior parte de suas aplicações está em produtos de renda variável – ações, fundos de ações, opções, entre outros.</p>
 
             <img src='../img/agressivo.png' alt='Gráfico do perfil investidor agressivo'>
+            
+            <ul>
+                <li><b>Minicontrato Futuro</b> é a nova modalidade do mercado disponibilizada pela Bolsa de Valores Brasileira, ele busca tornar mais acessível ao investidor iniciante investir em ações ou no já que o custo operacional é mais baixo do que a compra de ações no S&P500 mercado à vista.</li><br>
+                
+                <li>As <b>Opções</b> são um tipo de derivativo que dá o direito de comprar ou vender um lote de ações por um preço fixado.</li><br>
+
+                <li>As <b>Ações</b> são parte do capital social de uma empresa que são negociadas na Bolsa de Valores.</li><br>
+            </ul>
             ";
         }
         ?>

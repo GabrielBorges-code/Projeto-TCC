@@ -15,6 +15,12 @@ div.conteudo h1 {
 
 }
 
+div.conteudo ul{
+    list-style: disc;
+    text-align: justify;
+
+}
+
 div.conteudo b {
     font-weight: bold;
 }

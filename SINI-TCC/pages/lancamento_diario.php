@@ -72,9 +72,9 @@ $pagina_padrao->cabecalho();
                 // var_dump($dados_lancamento);
                     foreach ($dados_lancamento as $key => $dados) {
                         echo "<tr>";
-                        echo "<td>" . $dados["data_lancamento"] . "</td>";
-                        echo "<td> R$ " . $dados["resultado_dia"] . "</td>";
-                        echo "<td> R$ " . $dados["saldo_virtual"] . "</td>";
+                        echo "<td>    {$dados['data_lancamento']} </td>";
+                        echo "<td> R$ {$dados['resultado_dia']} </td>";
+                        echo "<td> R$ {$dados['saldo_virtual']} </td>";
 
                         echo "<td><a href='./validacao/excluir_lancamento.php?id=" . $dados["id"] . "'><img src='./icon/excluir.png' alt='imagem para fazer a exclusão do item'></a></td>";
 
@@ -83,6 +83,9 @@ $pagina_padrao->cabecalho();
                 ?>
             
         </table>
+
+        <!-- <button onclick="window.location='#'" type="button" class="btn-perfil">Gerar Relatório</button> -->
+        <button  onclick="window.location='./validacao/planilha_lancamento_diario.php'" id="gerar-relatorio" class="btn-access">Gerar Relatório</button>
 
     </div>
 

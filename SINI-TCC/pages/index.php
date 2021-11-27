@@ -75,7 +75,7 @@ Database::disconnect();
 
     <button onclick="window.location='simular_lucro.php'" type="button" class="btn-perfil">Simular Lucro</button>
     <button onclick="window.location='lancamento_diario.php'" type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button>
-    <button onclick="window.location='#'" type="button" class="btn-perfil">Gerar Relatório</button>
+    <!-- <button onclick="window.location='#'" type="button" class="btn-perfil">Gerar Relatório</button> -->
 
   </div>
 
