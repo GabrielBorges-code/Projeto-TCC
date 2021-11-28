@@ -9,7 +9,7 @@ $pagina_padrao->cabecalho();
     <h1 class="login titulo-principal">Não tem cadastro em nossa plataforma?</h1>
     <p class="login">Faça o cadastro, e venha aprender conosco! 😉</p>
 
-    <form method="POST" action="./pages/validacao/cadastrar_novo_usuario.php">
+    <form method="POST" action="./pages/validacao/cadastrar_novo_usuario">
         <label for="nomesobrenome">Nome e Sobrenome</label>
         <input type="text" name="nome" id="nomesobrenome" class="input-padrao" required placeholder="Gabriel Borges de Moura">
 

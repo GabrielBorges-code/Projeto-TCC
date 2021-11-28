@@ -4,7 +4,7 @@ require('../../config/database.php');
 
 session_start();
 if (!$_SESSION['logged_in']) {
-    header("Location: ../validacao/logout.php");
+    header("Location: ../validacao/logout");
     exit;
 }
 
@@ -226,5 +226,5 @@ $query_insert->execute();
 Database::disconnect();
 
 echo "<script>window.alert('Perfil Avaliado Com Sucesso!')
-            window.location.href = '../investimentos_recomendados.php'</script> ";
+            window.location.href = '../investimentos_recomendados'</script> ";
 

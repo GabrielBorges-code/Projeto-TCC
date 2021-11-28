@@ -30,7 +30,7 @@ $email_existe = $query_emails_cadastrados[0]['COUNT(email)'];
 
 if ($email_existe == 0) {
     echo "<script>window.alert('Esse email não está cadastrado no sistema') 
-                        window.location.href = '../cadastro.php'</script>";
+                        window.location.href = '../cadastro'</script>";
     // echo "Esse email não está cadastrado no sistema";
             // exit;
 } else if ($email_existe == 1) {
@@ -54,13 +54,13 @@ if ($email_existe == 0) {
         //Content
         $mail->isHTML(true);
         $mail->Subject = utf8_decode('Recuper Senha - Sistema  Indicação de Investimentos e Gerenciamento de Capital');
-        $mail->Body    = utf8_decode("Prezado usuário, tudo bem?<br>Você solicitou a recuperação de senha, click no link para cadastrar uma <a href='http://localhost/projeto-TCC/SINI-TCC/recuperar_senha.php?email={$email}' target='_blank' rel='noopener noreferrer'>nova senha</a>.<br><br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital");
+        $mail->Body    = utf8_decode("Prezado usuário, tudo bem?<br><br>Você solicitou a recuperação de senha, click no link para cadastrar uma <a href='http://localhost/projeto-TCC/SINI-TCC/recuperar_senha?email={$email}' target='_blank' rel='noopener noreferrer'>nova senha</a>.<br><br>Atenciosamente, <br>Sistema Indicação de Investimentos e Gerenciamento de Capital.");
     
         $mail->send();
     
         // echo 'E-mail enviado com sucesso!<br>';
         echo "<script>window.alert('E-mail enviado para recuperar a senha')
-                            window.location.href = '../index.php'</script>";
+                            window.location.href = '../index'</script>";
 
     } catch (Exception $e) {
         // echo "Falha ao enviar o E-mail<br> {$mail->ErrorInfo}";

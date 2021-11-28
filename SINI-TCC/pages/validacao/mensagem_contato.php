@@ -32,7 +32,5 @@ $query_insert->execute();
 Database::disconnect();
 
 echo "<script>window.alert('Mensagem enviada, em breve entraremos em contato com você 😉!')
-        window.location.href = '../../index.php'</script>";
+        window.location.href = '../../index'</script>";
 
-
-?>

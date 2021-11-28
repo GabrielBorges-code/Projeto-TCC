@@ -2,9 +2,6 @@
 
 require('../../config/database.php');
 
-$pdo = Database::connect();
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 $nome = "";
 if (!empty($_POST["nome"])) {
     $nome = $_POST["nome"];
@@ -26,6 +23,9 @@ if (!empty($_POST["senha"])) {
     $senha = md5($senha);
 }
 
+$pdo = Database::connect();
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $sql_select= "SELECT email FROM USUARIO";
 $query_select = $pdo->prepare($sql_select);
 $query_select->execute();
@@ -35,7 +35,7 @@ $query_emails_cadastrados = $query_select->fetchAll(PDO::FETCH_ASSOC);
 for ($i = 0; $i < sizeof($query_emails_cadastrados); $i++){
     if($query_emails_cadastrados[$i]['email'] == $email){
         echo "<script>window.alert('Esse email já está cadastrado!') 
-                        window.location.href = '../../login.php'</script>";
+                        window.location.href = '../../login'</script>";
         exit;
     }
 
@@ -47,6 +47,5 @@ $query_insert->execute();
 
 Database::disconnect();
 
-header("Location: ../../email/email_cadastrado.php?email={$email}");
+header("Location: ../../email/email_cadastrado?email={$email}");
 
-?>

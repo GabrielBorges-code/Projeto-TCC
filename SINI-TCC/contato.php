@@ -15,7 +15,7 @@ $pagina_padrao->cabecalho();
             
         </div>
 
-        <form class="form-contact" method="POST" action="./pages/validacao/mensagem_contato.php">
+        <form class="form-contact" method="POST" action="./pages/validacao/mensagem_contato">
 
             <label for="nomesobrenome">Nome e Sobrenome</label>
             <input type="text" name="nome" id="nomesobrenome" class="input-padrao" required placeholder="Gabriel Borges de Moura">

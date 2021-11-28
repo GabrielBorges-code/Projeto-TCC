@@ -10,13 +10,15 @@ class PaginaPadrao {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+            <link rel="shortcut icon" href="./style/img/favicon.ico" type="image/x-icon">
+
             <link rel="stylesheet" href="./style/reset.css">
             <link rel="stylesheet" href="./style/padrao.css">
             <link rel="stylesheet" href="./style/sobre.css">
             <link rel="stylesheet" href="./style/contato.css">
             <link rel="stylesheet" href="./style/login.css">
             <link rel="stylesheet" href="./style/index.css">
-      
+
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="./lib/vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
 
@@ -28,20 +30,20 @@ class PaginaPadrao {
 
             <header>
                 <div class="menu">
-                    <a href="index.php"><img class="img-icone" src="./pages/icon/control-panel.png" alt="icone painel de controle"></a>
+                    <a href="index"><img class="img-icone" src="./pages/icon/control-panel.png" alt="icone painel de controle"></a>
 
                     <nav>
                         <ul>
-                            <li><a href="index.php">Início</a></li>
-                            <li><a href="contato.php">Contato</a></li>
-                            <li><a href="sobre.php">Sobre</a></li>
+                            <li><a href="index">Início</a></li>
+                            <li><a href="contato">Contato</a></li>
+                            <li><a href="sobre">Sobre</a></li>
                             <li>
-                                <a href="login.php"><button type="button" class="btn btn-login">Login</button></a>
+                                <a href="login"><button type="button" class="btn btn-login">Login</button></a>
 
                             </li>
 
                             <li>
-                                <a href="cadastro.php"><button type="button" class="btn btn-register">Registre-se</button></a>
+                                <a href="cadastro"><button type="button" class="btn btn-register">Registre-se</button></a>
                             </li>
                             
                         </ul>

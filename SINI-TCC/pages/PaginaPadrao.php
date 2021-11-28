@@ -25,6 +25,8 @@ class PaginaPadrao {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+            <link rel="shortcut icon" href="../style/img/favicon.ico" type="image/x-icon">
+
             <link rel="stylesheet" href="../style/reset.css">
             <link rel="stylesheet" href="../style/padrao.css">
 
@@ -44,7 +46,7 @@ class PaginaPadrao {
 
             <header>
                 <div class="menu">
-                    <a href="index.php"><img class="img-icone" src="./icon/control-panel.png" alt="icone painel de controle"></a>
+                    <a href="index"><img class="img-icone" src="./icon/control-panel.png" alt="icone painel de controle"></a>
 
                     <nav>
                         <ul>
@@ -53,9 +55,9 @@ class PaginaPadrao {
                                 <a class="botao tp" href="javascript://"><img src="' . $caminho_ft_perfil .'" alt=""></a>
 
                                 <ul class="dropDown">
-                                    <li><a href="perfil.php">Meu Perfil</a></li>
-                                    <li><a href="mensagens.php">Mensagens</a></li>
-                                    <li><a href="./validacao/logout.php">Sair</a></li>
+                                    <li><a href="perfil">Meu Perfil</a></li>
+                                    <li><a href="mensagens">Mensagens</a></li>
+                                    <li><a href="./validacao/logout">Sair</a></li>
 
                                 </ul>
                             </li>

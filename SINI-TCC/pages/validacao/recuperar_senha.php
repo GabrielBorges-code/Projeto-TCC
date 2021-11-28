@@ -25,8 +25,5 @@ $query_insert->execute();
 Database::disconnect();
 
 echo "<script>window.alert('Senha alterada com sucesso!')
-        window.location.href = '../../login.php'</script>";
+        window.location.href = '../../login'</script>";
 // echo "Senha alterada com sucesso";
-
-
-?>

@@ -57,14 +57,14 @@ if ($foto_perfil["name"] != null) {
 
         if ($imageFileType != "jpg" && $imageFileType != "jpeg") {
             echo "<script>alert('Desculpa, somente arquivos JPEG/JPG.');
-            window.location.href = '../perfil.php'</script>";
+            window.location.href = '../perfil'</script>";
             exit;
             // $uploadOk = 0;
         }
         // Check file size
         if ($_FILES["foto-perfil"]["size"] > 5000000) {
             echo "<script>alert('Desculpa, mas sua imagem ultrapassa o tamanho máximo permitido.');
-            window.location.href = '../perfil.php'</script>";
+            window.location.href = '../perfil'</script>";
             exit;
             // $uploadOk = 0;
         }
@@ -76,10 +76,10 @@ if ($foto_perfil["name"] != null) {
             }
             if (move_uploaded_file($_FILES['foto-perfil']['tmp_name'], $target_file)) {
                 rename("$target_file", "$target_dir" . "profileImage.$imageFileType");
-                echo "<script>window.location.href('../perfil_edicao.php?id=$id');</script>";
+                echo "<script>window.location.href('../perfil_edicao?id=$id');</script>";
             } else {
                 echo "<script>window.alert('Erro ao fazer upload do arquivo!')
-                    window.location.href = '../perfil.php'</script>";
+                    window.location.href = '../perfil'</script>";
                 exit;
             }
         }
@@ -98,4 +98,4 @@ $query->execute();
 Database::disconnect();
 
 echo "<script>window.alert('Dados atualizados com suceso!')
-        window.location.href = '../perfil.php'</script>";
+        window.location.href = '../perfil'</script>";
