@@ -1,13 +1,6 @@
 <?php
 require('../../config/database.php');
 
-
-session_start();
-if (!$_SESSION["logged_in"]) {
-    header("Location: ../validacao/logout.php");
-    exit;
-}
-
 $id = $_SESSION["dados_usuario"]["id"];
 
 $pdo = Database::connect();

@@ -21,7 +21,7 @@ $pagina_padrao->cabecalho();
 
         <br>
 
-        <form method="POST" action="./validacao/questionario.php">
+        <form method="POST" action="./validacao/questionario">
 
             <div class="wall" id="wall-1">
 

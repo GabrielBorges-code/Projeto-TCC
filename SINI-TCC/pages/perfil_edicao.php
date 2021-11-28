@@ -68,7 +68,7 @@ if (!is_dir($imagem_perfil)) {
 
         <ul class="perfil">
            
-            <form method="POST" enctype="multipart/form-data" action="./validacao/perfil_save.php?id=<?= $id ?>">
+            <form method="POST" enctype="multipart/form-data" action="./validacao/perfil_save?id=<?= $id ?>">
                 <center>
                     <label for="foto-perfil">Escolha uma foto de perfil</label> <br>
                     <input type="file" accept="image/*" name="foto-perfil" id="foto-perfil">

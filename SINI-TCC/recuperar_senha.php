@@ -18,7 +18,7 @@ $pagina_padrao->cabecalho();
     <h1 class="login titulo-principal">Esqueceu a senha?</h1>
     <p class="login">Digite a sua nova senha</p>
 
-    <form method="POST" action="./pages/validacao/recuperar_senha.php?email=<?= $email ?>">
+    <form method="POST" action="./pages/validacao/recuperar_senha?email=<?= $email ?>">
         <label for="password">Digite a senha</label>
         <input type="password" name="senha" id="password" class="input-padrao" required placeholder="********">
 

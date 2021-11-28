@@ -64,17 +64,17 @@ Database::disconnect();
 
     <?php
       if (empty($dados_consulta)) {
-        echo "<button onclick=\"window.location='questionario_perfil_investidor.php'\" type='button' class='btn-perfil'>Quetionario Perfil do Investidor</button>";
+        echo "<button onclick=\"window.location='questionario_perfil_investidor'\" type='button' class='btn-perfil'>Quetionario Perfil do Investidor</button>";
         
       } else {
-        echo "<button onclick=\"window.location='investimentos_recomendados.php'\" type='button' class='btn-perfil'>Investimentos Recomendados</button>";
+        echo "<button onclick=\"window.location='investimentos_recomendados'\" type='button' class='btn-perfil'>Investimentos Recomendados</button>";
 
       }
 
     ?>
 
-    <button onclick="window.location='simular_lucro.php'" type="button" class="btn-perfil">Simular Lucro</button>
-    <button onclick="window.location='lancamento_diario.php'" type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button>
+    <button onclick="window.location='simular_lucro'" type="button" class="btn-perfil">Simular Lucro</button>
+    <button onclick="window.location='lancamento_diario'" type="button" class="btn-perfil">Lançamentos Diários/Controle diário</button>
     <!-- <button onclick="window.location='#'" type="button" class="btn-perfil">Gerar Relatório</button> -->
 
   </div>

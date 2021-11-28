@@ -1,5 +1,6 @@
 <?php
 require('../config/database.php');
+
 include_once('PaginaPadrao.php');
 $pagina_padrao = new PaginaPadrao();
 
@@ -89,7 +90,7 @@ if (!is_dir($imagem_perfil)) {
 
             <br>
 
-            <button type='button' onclick="window.location='perfil_edicao.php?id=<?= $id ?>'" class='btn-access'>Editar Perfil</button>
+            <button type='button' onclick="window.location='perfil_edicao?id=<?= $id ?>'" class='btn-access'>Editar Perfil</button>
 
         </ul>
 

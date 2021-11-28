@@ -72,6 +72,6 @@ if (!empty($dados_lancamento)) {
 }
 
 // echo "<script>window.alert('Lançamento feito com suceso!')
-//         window.location.href = '../pages/lancamento_diario.php'</script>";
+//         window.location.href = '../pages/lancamento_diario'</script>";
 
-header("Location: /projeto-TCC/SINI-TCC/pages/lancamento_diario.php");
+header("Location: /projeto-TCC/SINI-TCC/pages/lancamento_diario");

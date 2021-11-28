@@ -25,7 +25,7 @@ if($login_usuario['COUNT(nome)'] == 1){
     session_start();
     $_SESSION["logged_in"] = true; 
     $_SESSION["dados_usuario"] = $dados_usuario; 
-	header("Location: ../index.php");
+	header("Location: ../index");
 	exit();
 
 } else {
@@ -37,5 +37,5 @@ if($login_usuario['COUNT(nome)'] == 1){
 
 }
 
-?>
+
 
